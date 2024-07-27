@@ -1,0 +1,127 @@
+# The URL the site will be built for
+base_url = "https://www.winterstein.biz"
+
+theme = "blow"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+# The taxonomies to be rendered for the site and their configuration of the default languages
+# Example:
+#     taxonomies = [
+#       {name = "tags", feed = true}, # each tag will have its own feed
+#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
+#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
+#       {name = "authors"}, # Basic definition: no feed or pagination
+#     ]
+#
+taxonomies = [
+    {name = "projects", paginate_by = 5, feed = true},
+    {name = "skills", paginate_by = 5, feed = true},
+]
+
+title = "Adrian Winterstein - Empowering interdisciplinary, distributed teams"
+
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+# Additional languages definition
+# You can define language specific config values and translations:
+# title, description, generate_feed, feed_filename, taxonomies, build_search_index
+# as well as its own search configuration and translations (see above for details on those)
+#[languages]
+## For example
+#[languages.de]
+#title = "Blow"
+#description = "Un thème pour Zola fait avec tailwindcss"
+##generate_feed = false
+#taxonomies = [
+#    {name = "projects", paginate_by = 5, feed = true},
+#    {name = "skills", paginate_by = 5, feed = true},
+#]
+
+[extra]
+# Put all your custom variables here
+
+enable_search = false
+enable_sidebar = false
+enable_adsense = false
+enable_multilingue = false
+
+[extra.lang]
+items = [
+    { lang = "en", links = [
+        { base_url = "/", name = "English" },
+        { base_url = "/de", name = "German" },
+    ] },
+    #{ lang = "de", links = [
+    #    { base_url = "/", name = "Englisch" },
+    #    { base_url = "/de", name = "Deutsch" },
+    #] },
+]
+
+[extra.navbar]
+items = [
+    { lang = "en", links = [
+        { url = "/", name = "Home" },
+        { url = "/projects", name = "Projects" },
+        { url = "/skills", name = "Skills" },
+    ] },
+    { lang = "de", links = [
+        { url = "/de", name = "Home" },
+        { url = "/de/projecs", name = "Projekte" },
+        { url = "/de/skills", name = "Fähigkeiten" },
+    ] },
+]
+
+title = "Adrian Winterstein"
+
+[extra.sidebar]
+items = [
+    { lang = "en", links = [
+        { url = "/markdown", name = "Markdown" },
+        { url = "/blog", name = "Blog" },
+    ] },
+    { lang = "de", links = [
+        { url = "/de/markdown", name = "Markdown" },
+        { url = "/de/blog", name = "Blog" },
+    ] },
+]
+
+# Index page
+[extra.index]
+title = "Adrian Winterstein"
+slogan = "Empowering interdisciplinary, distributed teams"
+image = "adrian.png"
+image_alt = "Placeholder text describing the index's image."
+
+[extra.default_author]
+name = "Adrian Winterstein"
+avatar = "adrian.png"
+avatar_alt = "Placeholder text describing the default author's avatar."
+
+[extra.social]
+codeberg = ""
+github = ""
+gitlab = ""
+twitter = ""
+mastodon = ""
+linkedin = "https://www.linkedin.com/in/adrian-winterstein/"
+stackoverflow = ""
+telegram = ""
+email = "mail@int.winterstein.biz"
+
+[extra.favicon]
+favicon = "/icons/favicon.ico"
+favicon_16x16 = "/icons/favicon-16x16.png"
+favicon_32x32 = "/icons/favicon-32x32.png"
+apple_touch_icon = "/icons/apple-touch-icon.png"
+android_chrome_512 = "/icons/android-chrome-512x512.png"
+android_chrome_192 = "/icons/android-chrome-192x192.png"
+manifest = "/icons/site.webmanifest"

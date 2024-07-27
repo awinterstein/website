@@ -1,0 +1,3 @@
+[submodule "themes/blow"]
+	path = themes/blow
+	url = git@github.com:awinterstein/zola-theme-blow.git
