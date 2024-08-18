@@ -1,10 +1,11 @@
 +++
-title = "Development of an IoT Edge Device for Campervans"
+title = "IoT Edge Device for Campervans"
 description = ""
 date = 2020-06-30
 
 [extra]
 date_start = 2020-04-01
+image = "campervan.jpg" # https://unsplash.com/de/fotos/-Sj_nIHXUgcc
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]

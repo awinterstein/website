@@ -5,6 +5,7 @@ date = 2020-07-31
 
 [extra]
 date_start = 2020-06-01
+image = "control-unit.jpg" # https://unsplash.com/de/fotos/-FO7JIlwjOtU
 
 [taxonomies]
 projects=["Software Development (GUI)"]

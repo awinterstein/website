@@ -1,10 +1,11 @@
 +++
-title = "Development of a Security Platform"
+title = "Security Platform"
 description = ""
 date = 2020-05-31
 
 [extra]
 date_start = 2019-11-01
+image = "alarm-system.jpg" # https://unsplash.com/de/fotos/-Ea4OPjLDt5k
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]

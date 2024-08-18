@@ -1,10 +1,11 @@
 +++
-title = "Development of a Household Appliance for Hot Drinks Preparation"
+title = "Household Appliance for Hot Drinks Preparation"
 description = ""
 date = 2018-01-31
 
 [extra]
 date_start = 2017-07-01
+image = "tea-pot.jpg" # https://unsplash.com/de/fotos/-k94FbpisWto
 
 [taxonomies]
 projects=["Software Development (Embedded)"]

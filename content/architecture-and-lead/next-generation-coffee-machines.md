@@ -1,10 +1,11 @@
 +++
-title = "Development of the Next Generation of Coffee Machines"
+title = "Next Generation of Coffee Machines"
 description = ""
 date = 2021-04-30
 
 [extra]
 date_start = 2020-07-01
+image = "coffee-machine.jpg" # https://unsplash.com/de/fotos/-H62cHzbS4Z8
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
