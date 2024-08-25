@@ -10,7 +10,8 @@ Germany
 
 ## Contact
 
-Email: mail@int.winterstein.biz
+Email: [mail@int.winterstein.biz](mailto:mail@int.winterstein.biz) \
+Phone: [+49 6150 1833121](tel:+4961501833121)
 
 ## Sales Tax Identification
 
