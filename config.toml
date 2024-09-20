@@ -101,11 +101,6 @@ slogan = "Empowering interdisciplinary, distributed teams"
 image = "adrian.png"
 image_alt = "Placeholder text describing the index's image."
 
-[extra.default_author]
-name = "Adrian Winterstein"
-avatar = "adrian.png"
-avatar_alt = "Placeholder text describing the default author's avatar."
-
 [extra.social]
 codeberg = ""
 github = ""
