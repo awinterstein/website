@@ -1,7 +1,7 @@
 # The URL the site will be built for
 base_url = "https://www.winterstein.biz"
 
-theme = "blow"
+theme = "project-portfolio"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -82,28 +82,28 @@ items = [
 
 title = "Adrian Winterstein"
 
-[extra.sidebar]
-items = [
-    { lang = "en", links = [
-        { url = "/markdown", name = "Markdown" },
-        { url = "/blog", name = "Blog" },
-    ] },
-    { lang = "de", links = [
-        { url = "/de/markdown", name = "Markdown" },
-        { url = "/de/blog", name = "Blog" },
-    ] },
-]
+#[extra.sidebar]
+#items = [
+#    { lang = "en", links = [
+#        { url = "/markdown", name = "Markdown" },
+#        { url = "/blog", name = "Blog" },
+#    ] },
+#    { lang = "de", links = [
+#        { url = "/de/markdown", name = "Markdown" },
+#        { url = "/de/blog", name = "Blog" },
+#    ] },
+#]
 
 # Index page
 [extra.index]
 title = "Adrian Winterstein"
 slogan = "Empowering interdisciplinary, distributed teams"
-image = "adrian.png"
-image_alt = "Placeholder text describing the index's image."
+image = "/adrian.png"
+image_alt = "Picture of Adrian Winterstein"
 
 [extra.social]
 codeberg = ""
-github = ""
+github = "https://github.com/awinterstein"
 gitlab = ""
 twitter = ""
 mastodon = ""
@@ -120,3 +120,9 @@ apple_touch_icon = "/icons/apple-touch-icon.png"
 android_chrome_512 = "/icons/android-chrome-512x512.png"
 android_chrome_192 = "/icons/android-chrome-192x192.png"
 manifest = "/icons/site.webmanifest"
+
+# Configuration parameters for the skills taxonomy overview page
+[extra.skills]
+main_skills_threshold = 5 # Set this variable to show all skills with at least n projects as main skills
+main_skills_heading = "Main Skills" # The heading for the main skills list (only relevant, if main_skills_threshold is set)
+other_skills_heading = "Additional Skills" # The heading for the list of the other skills (only relevant, if main_skills_threshold is set)

@@ -6,6 +6,7 @@ date = 2024-09-30
 [extra]
 date_start = 2022-08-01
 image = "fire.jpg"
+top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]

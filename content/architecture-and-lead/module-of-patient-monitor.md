@@ -6,7 +6,7 @@ date = 2022-07-31
 [extra]
 date_start = 2021-11-01
 image = "patient-monitor.jpg" # https://unsplash.com/de/fotos/-BvS7q4yFQt4
-
+top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
