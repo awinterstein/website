@@ -1,5 +1,5 @@
 {% extends "project-portfolio/templates/layout.html" %}
 
 {% block content_footer %}
-<a href="/impressum">© {{ now() | date(format="%Y") }} Adrian Winterstein | Impressum – Legal Notice</a>
+© {{ now() | date(format="%Y") }} Adrian Winterstein | <a href="/impressum">Impressum – Legal Notice</a> | <a href="/privacy-policy">Privacy Policy</a>
 {% endblock %}
