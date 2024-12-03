@@ -1,10 +1,10 @@
 +++
 title = "Control System for Innovative Chillers"
 description = "Transfer of a control system for innovative chillers into a microcontroller solution."
-date = 2015-05-01
+date = 2015-12-31
 
 [extra]
-date_start = 2015-12-31
+date_start = 2014-05-01
 image = "water.jpg" # https://unsplash.com/de/fotos/-JdMihDkP-vc
 
 [taxonomies]

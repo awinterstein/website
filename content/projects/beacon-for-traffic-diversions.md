@@ -9,7 +9,7 @@ image = "traffic-diversion.jpg" # https://unsplash.com/de/fotos/-1mAafgRvWBU
 
 [taxonomies]
 projects=["Software Development (Embedded)"]
-skills=["C++", "Firmware", "Cortex M4", "FreeRTOS", "Over-the-Air Update", "MQTT", "CMake", "Python", "Azure DevOps"]
+skills=["C++", "Firmware",  "Continuous Integration", "Cortex M4", "FreeRTOS", "Over-the-Air Update", "MQTT", "CMake", "Python", "Azure DevOps"]
 +++
 
 The goal: municipalities, cities, roadworks
@@ -19,5 +19,5 @@ inspection journeys. An interdisciplinary team of electronics, firmware
 and cloud developers designed and built the solution.
 
 ## Responsibilities
-Coaching the software lead, concept and implementation of the test environment and firmware development with focus
-on the area of positioning and application logic.
+
+Coaching the software lead, concept and implementation of the test environment and firmware development with focus on the area of positioning and application logic.

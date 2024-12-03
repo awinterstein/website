@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["C++", "Firmware", "Cortex M4", "FreeRTOS", "CMake", "Python", "Azure DevOps", "Polarion", "Google Test", "Qt", "Ansible", "Scrum", "Git"]
+skills=["C++", "Firmware",  "Continuous Integration", "Cortex M4", "FreeRTOS", "CMake", "Python", "Azure DevOps", "Polarion", "Google Test", "Qt", "Ansible", "Scrum", "Git"]
 +++
 
 The client needed a new connection module to connect additional sensors via *USB* to their existing hardware, which was only able to provide an *UART* interface. The module was supposed to provide the sensor data and allow for sensor configuration via a well-defined and structured protocol. This protocol was also to be defined and developed in the project.

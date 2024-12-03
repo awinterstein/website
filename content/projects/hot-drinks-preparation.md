@@ -19,4 +19,5 @@ markets. In an interdisciplinary team, the hardware, electronics and
 software was developed to production readiness.
 
 ## Responsibilities
+
 Firmware development in a scrum team. Focus on controlling the preparation process and error handling.

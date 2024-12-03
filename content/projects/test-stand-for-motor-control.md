@@ -19,5 +19,6 @@ hardware test stand. This software should offer extensive analysis
 possibilities and was based on Python and Qt.
 
 ## Responsibilities
+
 Development of the UI component for the test system
 with PyQt and enabling colleagues to continue this development.

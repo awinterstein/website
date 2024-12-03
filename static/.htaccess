@@ -1,1 +1,13 @@
 ErrorDocument 404 /404.html
+
+RewriteEngine on
+
+# Forward to the www subdomain, if it was missing.
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule .* http://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+RewriteRule ^architecture-and-lead/(.*)$ /projects/$1 [R=301,L]
+RewriteRule ^research/(.*)$ /projects/$1 [R=301,L]
+RewriteRule ^software-development-embedded/(.*)$ /projects/$1 [R=301,L]
+RewriteRule ^software-development-gui/(.*)$ /projects/$1 [R=301,L]
+RewriteRule ^system-testing/(.*)$ /projects/$1 [R=301,L]

@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["C++", "Firmware", "Cortex M4", "FreeRTOS", "CMake", "Python", "Jenkins", "Google Test", "Ansible", "Eclipse", "Scrum", "Git"]
+skills=["C++", "Firmware", "Continuous Integration", "Cortex M4", "FreeRTOS", "CMake", "Python", "Jenkins", "Google Test", "Ansible", "Eclipse", "Scrum", "Git"]
 +++
 
 Particularly challenging in this context was to ensure the unattended function of the device over several years, which required intensive interaction of the electronics and software disciplines.
