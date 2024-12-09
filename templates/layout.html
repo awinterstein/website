@@ -3,9 +3,17 @@
 {% block content_footer %}
 
 {% if lang == 'de' %}
-    © {{ now() | date(format="%Y") }} Adrian Winterstein | <a href="/{{ lang }}/impressum">Impressum</a> | <a href="/{{ lang }}/privacy-policy">Datenschutzerklärung</a>
+© {{ now() | date(format="%Y") }} Adrian Winterstein | <a href="/{{ lang }}/impressum">Impressum</a> | <a
+    href="/{{ lang }}/privacy-policy">Datenschutzerklärung</a>
 {% else %}
-    © {{ now() | date(format="%Y") }} Adrian Winterstein | <a href="/impressum">Impressum – Legal Notice</a> | <a href="/privacy-policy">Privacy Policy</a>
+© {{ now() | date(format="%Y") }} Adrian Winterstein | <a href="/impressum">Impressum – Legal Notice</a> | <a
+    href="/privacy-policy">Privacy Policy</a>
 {% endif %}
 
+{% endblock %}
+
+
+{% block extra_js %}
+<img referrerpolicy="no-referrer-when-downgrade" src="https://analysis.winterstein.biz/matomo.php?idsite=1&amp;rec=1"
+    style="border:0" width="0" height="0" alt="" />
 {% endblock %}
