@@ -1,5 +1,3 @@
-
-
 +++
 title = "Prototype “Pump & Heater” for a Coffee Machine"
 description = "The concept of a new type of coffee machine was to be tested for suitability."
@@ -17,4 +15,5 @@ skills=["C++", "Arduino", "Firmware", "Prototyping", "Git"]
 For this purpose a prototype of a component was realized. The focus was on the interplay between the achievable flow rate and the water temperature.
 
 ## Responsibilities
+
 Implementation of the firmware for controlling the prototype.

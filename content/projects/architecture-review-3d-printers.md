@@ -9,10 +9,11 @@ image = "printer.jpg" # https://unsplash.com/de/fotos/-qPEEb-hmiZI
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["C++", "Qt", "QML", "qmake", "cppcheck", "Visual Studio"]
+skills=["Architecture", "C++", "Qt", "QML", "qmake", "cppcheck", "Visual Studio"]
 +++
 
 In addition, the effort of a change from Qt4 to Qt5 had to be estimated.
 
 ## Responsibilities
+
 Implementation of the architecture review, analysis of the results and development of concrete suggestions for improvement.

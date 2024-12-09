@@ -1,6 +1,6 @@
 +++
 title = "Next Generation of Coffee Machines"
-description = ""
+description = "Architecture consulting for coffee machines."
 date = 2021-04-30
 
 [extra]
@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["C++", "Firmware", "Cortex M3", "Python", "Gitlab", "Visual Studio", "Git"]
+skills=["Architecture", "C++", "Firmware", "Arm Cortex", "Python", "Gitlab", "Visual Studio", "Git"]
 +++
 
 The next generation of fully automatic coffee machines from a manufacturer of home appliances and commercial equipment was to be based on a new system architecture. To this end, the software architectures had to be further developed and a transition of the existing code base to the new architecture was needed.

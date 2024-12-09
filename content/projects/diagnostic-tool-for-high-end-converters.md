@@ -9,7 +9,7 @@ image = "tram.jpg" # https://unsplash.com/de/fotos/-NtjsIn1jBfI
 
 [taxonomies]
 projects=["Software Development (GUI)"]
-skills=["Qt", "QML", "C++", "Android", "Jenkins", "Qt Creator", "Git"]
+skills=["Qt", "QML", "C++", "Android", "CI / CD", "Jenkins", "Qt Creator", "Git"]
 +++
 
 By, among other things, an oscilloscope view that processes the analogue values
@@ -17,6 +17,7 @@ of the inverter and a recording and playback function that enables
 the recording and playback of diagnostic data.
 
 ## Responsibilities
+
 Implementation of additional functionalities within
 the existing Qt/QML application. Consulting the customer on software
 design, especially on the separation of presentation and business logic.

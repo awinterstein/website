@@ -10,14 +10,6 @@ compile_sass = true
 build_search_index = true
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
-# Example:
-#     taxonomies = [
-#       {name = "tags", feed = true}, # each tag will have its own feed
-#       {name = "tags"}, # you can have taxonomies with the same name in multiple languages
-#       {name = "categories", paginate_by = 5},  # 5 items per page for a term
-#       {name = "authors"}, # Basic definition: no feed or pagination
-#     ]
-#
 taxonomies = [
     {name = "projects", paginate_by = 5, feed = true},
     {name = "skills", paginate_by = 5, feed = true},
@@ -25,80 +17,66 @@ taxonomies = [
 
 title = "Adrian Winterstein - Empowering interdisciplinary, distributed teams"
 
-
-[markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = false
+[translations]
+language_symbol = "🇬🇧"
+home = "Home"
+projects = "Projects"
+skills = "Skills"
+read_more = "Read More"
+skills_technologies = "Skills & Technologies"
+main_skills = "Main Skills" # The heading for the main skills list (only relevant, if main_skills_threshold is set)
+other_skills = "Additional Skills" # The heading for the list of the other skills (only relevant, if main_skills_threshold is set)
 
 # Additional languages definition
 # You can define language specific config values and translations:
 # title, description, generate_feed, feed_filename, taxonomies, build_search_index
 # as well as its own search configuration and translations (see above for details on those)
-#[languages]
-## For example
-#[languages.de]
-#title = "Blow"
-#description = "Un thème pour Zola fait avec tailwindcss"
-##generate_feed = false
-#taxonomies = [
-#    {name = "projects", paginate_by = 5, feed = true},
-#    {name = "skills", paginate_by = 5, feed = true},
-#]
+[languages.de]
+title = "Adrian Winterstein"
+taxonomies = [
+    {name = "projects", paginate_by = 5, feed = true},
+    {name = "skills", paginate_by = 5, feed = true},
+]
+
+[languages.de.translations]
+language_symbol = "🇩🇪"
+home = "Home"
+projects = "Projekte"
+skills = "Qualifikationen"
+read_more = "Weiterlesen"
+skills_technologies = "Qualifikationen & Technologien"
+main_skills = "Top-Fähigkeiten" # The heading for the main skills list (only relevant, if main_skills_threshold is set)
+other_skills = "Weitere Fähigkeiten" # The heading for the list of the other skills (only relevant, if main_skills_threshold is set)
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customized by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "ayu-dark", filename = "syntax-dark.css" },
+  { theme = "ayu-light", filename = "syntax-light.css" },
+]
+
+render_emoji = true
 
 [extra]
 # Put all your custom variables here
 
 enable_search = false
 enable_sidebar = false
-enable_adsense = false
-enable_multilingue = false
+enable_multilingual = true
 
-[extra.lang]
-items = [
-    { lang = "en", links = [
-        { base_url = "/", name = "English" },
-        { base_url = "/de", name = "German" },
-    ] },
-    #{ lang = "de", links = [
-    #    { base_url = "/", name = "Englisch" },
-    #    { base_url = "/de", name = "Deutsch" },
-    #] },
-]
+main_skills_threshold = 5
 
 [extra.navbar]
-items = [
-    { lang = "en", links = [
-        { url = "/", name = "Home" },
-        { url = "/projects", name = "Projects" },
-        { url = "/skills", name = "Skills" },
-    ] },
-    { lang = "de", links = [
-        { url = "/de", name = "Home" },
-        { url = "/de/projecs", name = "Projekte" },
-        { url = "/de/skills", name = "Fähigkeiten" },
-    ] },
-]
-
 title = "Adrian Winterstein"
-
-#[extra.sidebar]
-#items = [
-#    { lang = "en", links = [
-#        { url = "/markdown", name = "Markdown" },
-#        { url = "/blog", name = "Blog" },
-#    ] },
-#    { lang = "de", links = [
-#        { url = "/de/markdown", name = "Markdown" },
-#        { url = "/de/blog", name = "Blog" },
-#    ] },
-#]
 
 # Index page
 [extra.index]
 title = "Adrian Winterstein"
 slogan = "Empowering interdisciplinary, distributed teams"
-image = "/adrian.png"
+image = "adrian.png"
 image_alt = "Picture of Adrian Winterstein"
 
 [extra.social]
@@ -113,16 +91,5 @@ telegram = ""
 email = "mail@int.winterstein.biz"
 
 [extra.favicon]
-favicon = "/icons/favicon.ico"
-favicon_16x16 = "/icons/favicon-16x16.png"
-favicon_32x32 = "/icons/favicon-32x32.png"
-apple_touch_icon = "/icons/apple-touch-icon.png"
-android_chrome_512 = "/icons/android-chrome-512x512.png"
-android_chrome_192 = "/icons/android-chrome-192x192.png"
-manifest = "/icons/site.webmanifest"
-
-# Configuration parameters for the skills taxonomy overview page
-[extra.skills]
-main_skills_threshold = 5 # Set this variable to show all skills with at least n projects as main skills
-main_skills_heading = "Main Skills" # The heading for the main skills list (only relevant, if main_skills_threshold is set)
-other_skills_heading = "Additional Skills" # The heading for the list of the other skills (only relevant, if main_skills_threshold is set)
+favicon_16x16 = "favicons/favicon-16x16.png"
+favicon_32x32 = "favicons/favicon-32x32.png"

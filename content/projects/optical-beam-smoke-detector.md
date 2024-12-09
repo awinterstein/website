@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["C++", "Firmware", "Continuous Integration", "Cortex M4", "FreeRTOS", "CMake", "Python", "TeamCity", "Protobuf", "Polarion", "Cpputest", "Ansible", "Docker", "Gitlab"]
+skills=["Architecture", "C++", "Firmware", "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "TeamCity", "Protobuf", "Polarion", "Cpputest", "Ansible", "Docker", "Gitlab"]
 +++
 
 In an interdisciplinary team of firmware, electronics and mechanics developers, physicists and test engineers, we developed the smoke detector with a **focus on very high sensitivity in all operation conditions**.
@@ -28,4 +28,4 @@ developers and supported the test system development (HIL) in *Python*.
 Additionally, I implemented parts of the detector firmware, for example the smoke
 level calculation, the **firmware update** and the **persistence layer**.
 And did the conception and implementation of the build system with *CMake* and of the
-continuous integration in the *TeamCity* CI/CD tool.
+continuous integration in the *TeamCity* CI / CD tool.

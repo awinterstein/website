@@ -9,7 +9,7 @@ image = "water.jpg" # https://unsplash.com/de/fotos/-JdMihDkP-vc
 
 [taxonomies]
 projects=["Software Development (Embedded)"]
-skills=["C++", "Firmware", "Cortex M4", "FreeRTOS", "Google Test", "Jenkins", "Rake", "Asciidoctor", "IAR Embedded Workbench", "Visual Studio"]
+skills=["C++", "Firmware", "Arm Cortex", "FreeRTOS", "Google Test", "CI / CD", "Jenkins", "Rake", "Asciidoctor", "IAR Embedded Workbench", "Visual Studio"]
 +++
 
 The customer developed a compression refrigeration machine with

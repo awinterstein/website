@@ -9,7 +9,7 @@ image = "campervan.jpg" # https://unsplash.com/de/fotos/-Sj_nIHXUgcc
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["C++", "Firmware", "Cortex M4", "CAN", "MQTT", "Azure", "Git"]
+skills=["Architecture", "C++", "Firmware", "Arm Cortex", "CAN", "MQTT", "Azure", "Git"]
 +++
 
 A leisure vehicles supplier developed an IoT system for the control of important vehicle components by the user. Among other things, an edge device for mounting in the vehicle was developed for this purpose. It connects the vehicle components to a cloud back end. The accessibility from the cloud while maintaining a low energy consumption of the device was particularly challenging.

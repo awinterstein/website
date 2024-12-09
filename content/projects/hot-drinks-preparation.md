@@ -9,7 +9,7 @@ image = "tea-pot.jpg" # https://unsplash.com/de/fotos/-k94FbpisWto
 
 [taxonomies]
 projects=["Software Development (Embedded)"]
-skills=["C++", "Firmware", "Cortex M4", "FreeRTOS", "CMake", "Google Test", "XText", "Eclipse", "Scrum", "Git"]
+skills=["C++", "Firmware", "Arm Cortex", "FreeRTOS", "CMake", "Google Test", "XText", "Eclipse", "Scrum", "Git"]
 +++
 
 A well-known manufacturer of household products in Germany wanted
