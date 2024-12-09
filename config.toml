@@ -15,7 +15,7 @@ taxonomies = [
     {name = "skills", paginate_by = 5, feed = true},
 ]
 
-title = "Adrian Winterstein - Empowering interdisciplinary, distributed teams"
+title = "Adrian Winterstein"
 
 [translations]
 language_symbol = "🇬🇧"
