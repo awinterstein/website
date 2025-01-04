@@ -15,14 +15,14 @@ if command -v zola >/dev/null; then
 elif command -v docker >/dev/null; then
 
     # create the container for zola builds and tailwindcss updates
-    docker build -t develop-zola-tailwindcss "${SOURCE_DIR}/themes/blow" || exit 2
+    docker build -t develop-zola-tailwindcss "${SOURCE_DIR}/themes/project-portfolio" || exit 2
 
-    # update the CSS file using tailwindcss
-    docker run --user $UID:$(id -g) --mount type=bind,source=${SOURCE_DIR},target=/source -w /source develop-zola-tailwindcss \
+    # build the website via zola
+    docker run -v ${SOURCE_DIR}:/source:Z -w /source develop-zola-tailwindcss \
         ${ZOLA_COMMAND} || exit 3
 
 # print an error message if neither tailwindcss nor the docker executable could be found
 else
-    echo "Need either 'tailwindcss' or 'docker' executable in the path." >&2
+    echo "Need either 'zola' or 'docker' executable in the path." >&2
     exit 1
 fi
