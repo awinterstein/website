@@ -89,6 +89,7 @@ linkedin = "https://www.linkedin.com/in/adrian-winterstein/"
 stackoverflow = ""
 telegram = ""
 email = "mail@int.winterstein.biz"
+phone = "+4961501833121"
 
 [extra.favicon]
 favicon_16x16 = "favicons/favicon-16x16.png"

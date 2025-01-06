@@ -9,10 +9,10 @@ Niederwiesenstraße 6\
 
 ## Kontakt
 
-Telefon: [+49 6150 1833121](tel:+4961501833121)\
-E-Mail: [mail@int.winterstein.biz](mailto:mail@int.winterstein.biz)
+<i class="bi bi-telephone-fill mr-2" alt="Telefon"></i> [+49 6150 1833121](tel:+4961501833121)\
+<i class="bi bi-envelope-paper-fill mr-2" alt="E-Mail"></i> [mail@int.winterstein.biz](mailto:mail@int.winterstein.biz)
 
-Public Key: [public-key.txt](/public-key.txt)\
+<i class="bi bi-key-fill mr-2" alt="Public Key"></i> [public-key.txt](/public-key.txt)\
 Key ID: `83F3A8307A4673C5`\
 Key Fingerprint: `3F3C 51E6 5FDE 9CAC 3266 D1DE 83F3 A830 7A46 73C5`
 
