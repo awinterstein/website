@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["Architecture", "C++", "Firmware", "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "TeamCity", "Protobuf", "Polarion", "Cpputest", "Ansible", "Docker", "Gitlab"]
+skills=["Architecture", "Tech Lead", "C++", "Firmware", "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "TeamCity", "Protobuf", "Polarion", "Cpputest", "Ansible", "Docker", "Gitlab"]
 +++
 
 In an interdisciplinary team of firmware, electronics and mechanics developers, physicists and test engineers, we developed the smoke detector with a **focus on very high sensitivity in all operation conditions**.

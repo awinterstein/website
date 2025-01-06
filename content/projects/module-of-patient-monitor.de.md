@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["Architecture", "C++", "Firmware",  "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "Azure DevOps", "Polarion", "Google Test", "Qt", "Ansible", "Scrum", "Git"]
+skills=["Architecture", "Tech Lead", "C++", "Firmware",  "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "Azure DevOps", "Polarion", "Google Test", "Qt", "Ansible", "Scrum", "Git"]
 +++
 
 Der Kunde benötigte ein neues Adaptionsmodul, um zusätzliche Sensoren über *USB* an seine bestehende Hardware anzuschließen, die nur über  *UART*-Schnittstellen verfügt. Das Modul sollte die Sensordaten bereitstellen und die Konfiguration der Sensoren über ein wohldefiniertes und strukturiertes Protokoll ermöglichen. Dieses Protokoll sollte ebenfalls im Rahmen des Projekts definiert und entwickelt werden.

@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["Architecture", "C++", "Firmware", "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "TeamCity", "Protobuf", "Polarion", "Cpputest", "Ansible", "Docker", "Gitlab"]
+skills=["Architecture", "Tech Lead", "C++", "Firmware", "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "TeamCity", "Protobuf", "Polarion", "Cpputest", "Ansible", "Docker", "Gitlab"]
 +++
 
 In einem interdisziplinären Team aus Firmware-, Elektronik- und Mechanikentwicklern, Physikern und Prüfingenieuren haben wir den Rauchmelder mit einem **Fokus auf sehr hohe Empfindlichkeit in allen Betriebszuständen** entwickelt.
