@@ -22,3 +22,5 @@ Die Firmware wurde für einen *Arm Arm Cortex* Controller in *C++* mit *FreeRTOS
 Ich war verantwortlich für die **Firmware-Architektur** des Melders und für die Integration in das Gesamtsystem. Im Rahmen dieser Aufgabe kümmerte ich mich um die **Schnittstellen zwischen Firmware und Elektronik** und die **Schnittstellen zum Brandmeldesystem**. Ich leitete die Firmware-Entwickler an und unterstützte die Entwicklung des Testsystems (HIL) in *Python*.
 
 Zusätzlich habe ich Teile der Melder-Firmware implementiert, zum Beispiel die Rauchpegelberechnung, das **Firmware-Update** und die **Persistenzschicht**. Und ich habe die Konzeption und Implementierung des Build-Systems mit *CMake* und der kontinuierlichen Integration im CI / CD-Tool *TeamCity* gemacht.
+
+<a href="/documents/projektreferenz-hekatron.pdf" target="_blank">Projektreferenz anzeigen<i class="bi bi-filetype-pdf ml-2"></i></a>

@@ -29,3 +29,5 @@ Additionally, I implemented parts of the detector firmware, for example the smok
 level calculation, the **firmware update** and the **persistence layer**.
 And did the conception and implementation of the build system with *CMake* and of the
 continuous integration in the *TeamCity* CI / CD tool.
+
+<a href="/documents/projektreferenz-hekatron.pdf" target="_blank">View Reference (German)<i class="bi bi-filetype-pdf ml-2"></i></a>

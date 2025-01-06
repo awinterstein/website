@@ -1,5 +1,5 @@
 +++
-title = "Digitalen Warnbake für die Verkehrslenkung"
+title = "Digitale Warnbake für die Verkehrslenkung"
 description = "Für ein “Smart City”-Startup wurde eine digitale Warnbake mit automatischer, hochpräziser GPS-Ortung und Visualisierung in der Cloud entwickelt."
 date = 2022-02-28
 

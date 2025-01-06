@@ -66,11 +66,21 @@ render_emoji = true
 enable_search = false
 enable_sidebar = false
 enable_multilingual = true
+enable_expertise = true
 
 main_skills_threshold = 5
 
 [extra.navbar]
 title = "Adrian Winterstein"
+
+items = [
+    { lang = "en", links = [
+        { url = "resume", name = "CV" },
+    ] },
+    { lang = "de", links = [
+        { url = "resume", name = "Lebenslauf" },
+    ] }
+]
 
 # Index page
 [extra.index]
