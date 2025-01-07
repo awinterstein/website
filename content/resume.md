@@ -140,7 +140,7 @@ in the embedded software development group.</p>
 Finished with the ECTS Grade A.
 {% end %}
 
-{% resume_station(time_span="2012 - 2014", title="Studies of Computer Science (M.Sc.)", company="Darmstadt University of Applied Sciences") %}
+{% resume_station(time_span="2012 - 2014", title="Studies of Computer Science (M.Sc.)", company="Darmstadt University of Applied Sciences", document_title="View Thesis (German)", document_file="masterarbeit.pdf") %}
 Master’s thesis: Development of a System For Navigated Implantation
 of Radiation Therarpy Markers
 {% end %}
@@ -149,7 +149,7 @@ of Radiation Therarpy Markers
 Finished with the ECTS Grade A.
 {% end %}
 
-{% resume_station(time_span="2009 - 2012", title="Studies of Computer Science (B.Sc.)", company="Darmstadt University of Applied Sciences") %}
+{% resume_station(time_span="2009 - 2012", title="Studies of Computer Science (B.Sc.)", company="Darmstadt University of Applied Sciences", document_title="View Thesis (German)", document_file="bachelorarbeit.pdf") %}
 Bachelor’s thesis: Development of an Algorithm for the Detection of
 Ears on 3D Profile Images
 {% end %}
