@@ -13,6 +13,7 @@ build_search_index = true
 taxonomies = [
     {name = "projects", paginate_by = 5, feed = true},
     {name = "skills", paginate_by = 5, feed = true},
+    {name = "blog-tags", paginate_by = 5, feed = true},
 ]
 
 title = "Adrian Winterstein"
@@ -26,6 +27,12 @@ read_more = "Read More"
 skills_technologies = "Skills & Technologies"
 main_skills = "Main Skills" # The heading for the main skills list (only relevant, if main_skills_threshold is set)
 other_skills = "Additional Skills" # The heading for the list of the other skills (only relevant, if main_skills_threshold is set)
+words = "words"
+minutes = "minutes"
+comments = "Comments"
+
+comment_mastodon_link_text = "Respond to this post on Mastodon."
+comment_mastodon_lint_title = "Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or any compatible platform."
 
 # Additional languages definition
 # You can define language specific config values and translations:
@@ -36,6 +43,7 @@ title = "Adrian Winterstein"
 taxonomies = [
     {name = "projects", paginate_by = 5, feed = true},
     {name = "skills", paginate_by = 5, feed = true},
+    {name = "blog-tags", paginate_by = 5, feed = true, render = false},
 ]
 
 [languages.de.translations]
@@ -47,6 +55,12 @@ read_more = "Weiterlesen"
 skills_technologies = "Qualifikationen & Technologien"
 main_skills = "Top-Fähigkeiten" # The heading for the main skills list (only relevant, if main_skills_threshold is set)
 other_skills = "Weitere Fähigkeiten" # The heading for the list of the other skills (only relevant, if main_skills_threshold is set)
+words = "Wörter"
+minutes = "Minuten"
+comments = "Kommentare"
+
+comment_mastodon_link_text = "Antworte auf diesen Post auf Mastodon."
+comment_mastodon_lint_title = "Da Mastodon dezentral organisiert ist, kann ein bestehendes Konto von einem anderen Mastodon-Server oder einer anderen kompatiblen Plattform verwendet werden."
 
 [markdown]
 # Whether to do syntax highlighting
@@ -79,6 +93,12 @@ items = [
     ] },
     { lang = "de", links = [
         { url = "resume", name = "Lebenslauf" },
+    ] },
+     { lang = "en", links = [
+        { url = "blog", name = "Blog" },
+    ] },
+    { lang = "de", links = [
+        { url = "blog", name = "Blog" },
     ] }
 ]
 

@@ -1,5 +1,6 @@
 +++
 title = " Qualifikationen"
+render = false
 +++
 
 Mein Fokus liegt auf der **Architektur und Entwicklung von Embedded-Systemen**, wobei ich die umfangreichste

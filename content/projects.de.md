@@ -1,5 +1,6 @@
 +++
 title = "Projekte"
+render = false
 +++
 
 Ich habe langjährige Projekterfahrung in der Entwicklung von Embedded-Systems. Sowohl als Architekt

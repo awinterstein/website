@@ -1,5 +1,6 @@
 +++
 title = " Skills & Technologies"
+render = false
 +++
 
 I'm focused on **architecture and development for embedded systems** with my main technological expertise being on [C++](c) development on [Arm Cortex](arm-cortex) microcontrollers.

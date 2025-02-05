@@ -1,5 +1,6 @@
 +++
 title = "Projects"
+render = false
 +++
 
 I am especially experienced in the area of embedded software architecture and development. I lead
