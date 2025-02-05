@@ -1,0 +1,15 @@
+<div class="comment flex mt-2 mb-4 {% if level > 1 %}ml-8{%endif %}">
+    <a href="{{ user_url }}" target="_blank" rel="external nofollow"><img src="{{ avatar }}" class="h-12 w-12 object-cover rounded-full mr-2"></a>
+    <div>
+        <div>
+            <a href="{{ user_url }}" target="_blank" rel="external nofollow" class="mr-12">{{ fullname }}</a>
+        </div>
+        <a href="{{ comment_url }}" target="_blank" rel="external nofollow" class="text-sm">{{ datetime }}</a>
+        <div class="mt-2">
+            {{ body | safe }}
+        </div>
+        {% if favorites > 0 %}
+        <a href="{{ comment_url }}/favourites" target="_blank"><div class="text-sm"><i class="bi bi-heart-fill mr-1"></i>{{ favorites }}</div>
+        {% endif %}
+    </div>
+</div>
