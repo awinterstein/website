@@ -1,0 +1,50 @@
+name: Build Website
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Build
+        run: ./build.sh
+      - name: Check for changed files
+        run: |
+          if [ ! -z "$(git status --untracked-files=no --porcelain)" ]; then
+            echo "::debug::$(git status --untracked-files=no --porcelain)"
+            echo "::error title=Changed files::There are changed files in the repository after build"
+            exit 1
+          fi
+      - name: Install zip
+        if: github.ref == 'refs/heads/main'
+        uses: montudor/action-zip@v1
+      - name: Create Release Archive
+        if: github.ref == 'refs/heads/main'
+        run: zip -r website.zip public/
+        shell: bash
+      - name: Create release (latest)
+        if: github.ref == 'refs/heads/main'
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.ACTIONS_ACCESS_TOKEN }}"
+          prerelease: false
+          automatic_release_tag: "latest"
+          files: website.zip
