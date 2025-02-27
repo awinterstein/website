@@ -32,7 +32,7 @@ minutes = "minutes"
 comments = "Comments"
 
 comment_mastodon_link_text = "Respond to this post on Mastodon."
-comment_mastodon_lint_title = "Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or any compatible platform."
+comment_mastodon_link_title = "Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or any compatible platform."
 
 # Additional languages definition
 # You can define language specific config values and translations:
@@ -60,7 +60,7 @@ minutes = "Minuten"
 comments = "Kommentare"
 
 comment_mastodon_link_text = "Antworte auf diesen Post auf Mastodon."
-comment_mastodon_lint_title = "Da Mastodon dezentral organisiert ist, kann ein bestehendes Konto von einem anderen Mastodon-Server oder einer anderen kompatiblen Plattform verwendet werden."
+comment_mastodon_link_title = "Da Mastodon dezentral organisiert ist, kann ein bestehendes Konto von einem anderen Mastodon-Server oder einer anderen kompatiblen Plattform verwendet werden."
 
 [markdown]
 # Whether to do syntax highlighting

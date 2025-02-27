@@ -9,7 +9,7 @@
             {{ body | safe }}
         </div>
         {% if favorites > 0 %}
-        <a href="{{ comment_url }}/favourites" target="_blank"><div class="text-sm"><i class="bi bi-heart-fill mr-1"></i>{{ favorites }}</div>
+        <a href="{{ comment_url }}/favourites" target="_blank"><div class="text-sm"><i class="bi bi-heart-fill mr-1"></i>{{ favorites }}</div></a>
         {% endif %}
     </div>
 </div>

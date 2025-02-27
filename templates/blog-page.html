@@ -1,24 +1,23 @@
 {% extends "project-portfolio/templates/blog-page.html" %}
 
 {% block blog_footer %}
-{% if page.extra.comments.host and page.extra.comments.username and page.extra.comments.id %}
-<hr class="mb-2">
-</hr>
+{#- Show comments and link to Mastodon post, if the comments variables are set for the page. -#}
+{%- if page.extra.comments.host and page.extra.comments.username and page.extra.comments.id -%}
+<hr class="mb-2"></hr>
 
-{% set comments_file = page.relative_path | split(pat="/") | last %}
-{#{% if lang != config.default_language %}
-{% set comments_file = comments_file | replace(from=lang ~ ".", to="") %}
-{% endif %}#}
+{#- Generate comment filename from current filename (same name different path) and load its content. -#}
+{%- set comments_file = page.relative_path | split(pat="/") | last -%}
+{%- set comments = get_page(path="blog-comments/" ~ comments_file) -%}
 
-{% set comments = get_page(path="blog-comments/" ~ comments_file) %}
-{% if comments.content %}
+{#- Show comments, if there are any in the comments file. -#}
+{%- if comments.content -%}
 <h2>{{ trans(key="comments", lang=lang) }}</h2>
 {{ comments.content | safe }}
-{% endif %}
+{%- endif -%}
 
+{#- Show link to the corresponding Mastodon post. -#}
 <a href="https://{{ page.extra.comments.host }}/@{{ page.extra.comments.username }}/{{ page.extra.comments.id }}"
-    title="{{ trans(key='comment_mastodon_lint_title', lang=lang) }}"
-    target="_blank" class="italic text-center mt-2"><i class="bi bi-mastodon mr-1"></i>{{ trans(key='comment_mastodon_link_text', lang=lang) }}</a>
-
-{% endif %}
+    title="{{ trans(key='comment_mastodon_link_title', lang=lang) }}" target="_blank" class="italic text-center mt-2"><i
+        class="bi bi-mastodon mr-1"></i>{{ trans(key='comment_mastodon_link_text', lang=lang) }}</a>
+{%- endif -%}
 {% endblock %}

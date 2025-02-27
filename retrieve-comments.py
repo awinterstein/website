@@ -11,7 +11,20 @@ from dateutil import parser as datetime_parser
 from babel.dates import format_date, format_time
 
 
+# the TOML header of the Markdown files (as defined for Zola)
 HEADER = "+++\nrender=false\n+++\n\n"
+
+# path where the markdown files of the blog entries are stored
+BLOG_PATH = 'content/blog'
+
+# path where the markdown files for the blog comments should be written
+BLOG_COMMENTS_PATH = 'content/blog-comments'
+
+# the default language of the website as defined in the config.toml
+DEFAULT_LANGUAGE = "en"
+
+# additional languages of the website as defined in the config.toml
+ADDITIONAL_LANGUAGES = ["de"]
 
 
 def get_blog_entry_files(path, exclude_translations):
@@ -22,7 +35,10 @@ def get_blog_entry_files(path, exclude_translations):
     requested with the exclude_translations parameter, to only return the files
     of the default language, but exclude all translation files.
     """
+
+    # pattern for markdown file names in additional languages that contain a language code (e.g, blog-entry.de.md)
     translation_pattern = re.compile(".*\\.[a-z]{2}\\.md$")
+
     files = []
 
     for file in glob(f'{path}/*.md'):
@@ -44,8 +60,8 @@ def get_blog_entry_comments_config(path, exclude_translations):
     """
     files_config = {}
 
-    for file in get_blog_entry_files(blog_path, exclude_translations):
-        with open(f'{blog_path}/{file}') as f:
+    for file in get_blog_entry_files(BLOG_PATH, exclude_translations):
+        with open(f'{BLOG_PATH}/{file}') as f:
             config_part = f.read().split('+++\n')[1]
             data = tomllib.loads(config_part)
 
@@ -55,7 +71,7 @@ def get_blog_entry_comments_config(path, exclude_translations):
     return files_config
 
 
-def create_empty_comment_files(blog_comments_path, files_comments_config):
+def create_empty_comment_files(BLOG_COMMENTS_PATH, files_comments_config):
     """
     Creates the markdown files for the comments of each blog entry.
 
@@ -63,7 +79,7 @@ def create_empty_comment_files(blog_comments_path, files_comments_config):
     files are not overwritten.
     """
     for file in files_comments_config:
-        comments_file = f'{blog_comments_path}/{file}'
+        comments_file = f'{BLOG_COMMENTS_PATH}/{file}'
         if not path.isfile(comments_file):
             with open(comments_file, "x") as f:
                 f.write(HEADER)
@@ -98,45 +114,46 @@ def create_markdown_entry(comment, locale):
         f'{comment['content']}{{% end %}}'
 
 
-blog_path = 'content/blog' # path where the markdown files of the blog entries are stored
-blog_comments_path = 'content/blog-comments' # path where the markdown files for the blog comments should be written
+if __name__ == "__main__":
+    # argument handling to allow for the parameter for creating the missing files
+    parser = argparse.ArgumentParser(
+        prog='Retrieve Comments',
+        description='Retrieves comments from Mastodon and creates corresponding markdown files')
+    parser.add_argument('--create-empty', action='store_true',
+                        help='Only create the missing empty comment files')
+    args = parser.parse_args()
 
-parser = argparse.ArgumentParser(
-    prog='Retrieve Comments',
-    description='Retrieves comments from Mastodon and creates corresponding markdown files')
-parser.add_argument('--create-empty', action='store_true', help='Only create the missing empty comment files')
-args = parser.parse_args()
+    # create the markdown files for the comments of each blog entry (without comments)
+    if args.create_empty:
+        files_comments_config = get_blog_entry_comments_config(
+            BLOG_PATH, exclude_translations=False)
+        create_empty_comment_files(
+            BLOG_COMMENTS_PATH, files_comments_config)
 
+    # retrieve the comments from Mastodon and write them to the markdown files
+    else:
+        files_comments_config = get_blog_entry_comments_config(
+            BLOG_PATH, exclude_translations=True)
 
-# create the markdown files for the comments of each blog entry (without comments)
-if args.create_empty:
-    files_comments_config = get_blog_entry_comments_config(
-        blog_path, exclude_translations=False)
-    create_empty_comment_files(
-        blog_comments_path, files_comments_config)
+        for file, data in files_comments_config.items():
+            config = data['extra']['comments']
 
-# retrieve the comments from Mastodon and write them to the markdown files
-else:
-    files_comments_config = get_blog_entry_comments_config(
-        blog_path, exclude_translations=True)
+            # retrieve JSON from the Mastodon API
+            url = f'https://{config['host']}/api/v1/statuses/{config['id']}/context'
+            response = json.loads(urlopen(url).read())
 
-    for file, data in files_comments_config.items():
-        config = data['extra']['comments']
+            # write the default language comment files
+            with open(f'{BLOG_COMMENTS_PATH}/{file}', "w") as f:
+                f.write(HEADER)
+                for comment in (response['descendants']):
+                    f.write(create_markdown_entry(
+                        comment, locale=DEFAULT_LANGUAGE))
 
-        # retrieve JSON from the Mastodon API
-        url = f'https://{config['host']
-                         }/api/v1/statuses/{config['id']}/context'
-        response = json.loads(urlopen(url).read())
-
-        # write the English comment files
-        with open(f'{blog_comments_path}/{file}', "w") as f:
-            f.write(HEADER)
-            for comment in (response['descendants']):
-                f.write(create_markdown_entry(comment, locale='en'))
-
-        # write the German comment files
-        file_german = file.replace('.md', '.de.md')
-        with open(f'{blog_comments_path}/{file_german}', "w") as f:
-            f.write(HEADER)
-            for comment in (response['descendants']):
-                f.write(create_markdown_entry(comment, locale='de'))
+            # write the additional language comment files
+            for language in ADDITIONAL_LANGUAGES:
+                file_with_language = file.replace('.md', f'.{language}.md')
+                with open(f'{BLOG_COMMENTS_PATH}/{file_with_language}', "w") as f:
+                    f.write(HEADER)
+                    for comment in (response['descendants']):
+                        f.write(create_markdown_entry(
+                            comment, locale=language))
