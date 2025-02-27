@@ -1,0 +1,41 @@
+name: Add Comments
+
+on:
+  schedule:
+  - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  comments:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+      - name: Retrieve Comments
+        run: ./retrieve-comments.py
+      - name: Create Pull-Request
+        run: |
+          set -ex
+
+          if [ ! -z "$(git status --untracked-files=no --porcelain)" ]; then
+            git config --local user.email "adrian@winterstein.biz"
+            git config --local user.name  "Adrian Winterstein"
+
+            # checkout a branch, commit the comment changes and push the branch
+            git checkout -b "feature/comments-adaption"
+            git commit -a -m "Changed blog comments according to changes on Mastodon."
+            git push origin $(git branch --show-current) --force-with-lease -f
+
+            # create pull-request
+            gh pr create -B main -l comments -a awinterstein -r awinterstein \
+              -t "Changed blog comments according to changes on Mastodon" \
+              -b "This is an automatically created pull-requests due to changes of the blog comments on Mastodon."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.ACTIONS_ACCESS_TOKEN }}
