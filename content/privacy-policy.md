@@ -19,8 +19,8 @@ Email: [mail@int.winterstein.biz](mailto:mail@int.winterstein.biz)
 
 ## Hosting
 
-The content of this website is hosted by ALL-INKL.COM - Neue Medien Münnich, Inh. René Münnich, Hauptstraße 68, 02742 Friedersdorf (hereinafter All-Inkl). Details can be found in the [privacy policy of All-Inkl](https://all-inkl.com/datenschutzinformationen/).
-The use of All-Inkl is based on Art. 6(1f) GDPR. I have a legitimate interest in the most reliable presentation of my website.
+The content of this website is hosted by manitu GmbH, Welvertstraße 2, 66606 St. Wendel, Germany (hereinafter Manitu). Details can be found in the [privacy policy of Manitu](https://www.manitu.de/datenschutz/).
+The use of Manitu is based on Art. 6(1f) GDPR. I have a legitimate interest in the most reliable presentation of my website.
 
 I have concluded a data processing agreement (DPA) for the use of the above-mentioned service. This is a contract prescribed by data protection law, which guarantees that it processes the personal data of my website visitors only in accordance with my instructions and in compliance with the GDPR.
 
@@ -49,4 +49,4 @@ I have configured Matomo so that it does not store any cookies in your browser.
 
 ### Hosting of Analysis Tools
 
-Just like the website, Matomo is hosted by All-Inkl (see also section [Hosting](#hosting)), so that all analysis data remains with me and is not passed on.
+Just like the website, Matomo is hosted by Manitu (see also section [Hosting](#hosting)), so that all analysis data remains with me and is not passed on.
