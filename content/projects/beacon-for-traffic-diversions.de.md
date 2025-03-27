@@ -9,7 +9,7 @@ image = "traffic-diversion.jpg" # https://unsplash.com/de/fotos/-1mAafgRvWBU
 
 [taxonomies]
 projects=["Software Development (Embedded)"]
-skills=["Architecture", "C++", "Firmware",  "CI / CD", "Arm Cortex", "FreeRTOS", "Firmware Update", "MQTT", "CMake", "Python", "Azure DevOps"]
+skills=["Architecture", "C++", "Firmware",  "CI / CD", "Arm Cortex", "FreeRTOS", "Firmware Update", "MQTT", "CMake", "Python", "Pytest", "AWS IoT Core", "Azure DevOps"]
 +++
 
 Das Ziel: Gemeinden, Städte, Baustellenbetreiber und Autofahrer sparen mit Funktionen wie Energie-, Betriebszustands- und Fehlermanagement Zeit und Kosten. Manuelle Kontrollfahrten entfallen. Ein interdisziplinäres Team aus Elektronik-, Firmware and Cloudentwicklern konzipierte und implementierte die Lösung.

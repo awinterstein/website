@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["Architecture", "C++", "Firmware", "Arm Cortex", "Python", "Gitlab", "Visual Studio", "Git"]
+skills=["Architecture", "C99", "C++", "Firmware", "Arm Cortex", "Python", "Gitlab", "Visual Studio", "Git"]
 +++
 
 Die nächste Generation der Kaffeevollautomaten eines Herstellers von Haushalts- und Gewerbegeräten sollte auf einer neuen System-Architektur aufbauen. Dafür mussten die Software-Architekturen weiterentwickelt und eine Transition der bisherigen Codebasis auf die

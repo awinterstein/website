@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["Architecture", "Tech Lead", "C++", "Firmware", "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "Jenkins", "Google Test", "Ansible", "Eclipse", "Scrum", "Git"]
+skills=["Architecture", "Tech Lead", "C++", "Firmware", "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "Jenkins", "Google Test", "Pytest", "Ansible", "Eclipse", "Scrum", "Git"]
 +++
 
 Besonders herausfordernd war hierbei die Sicherstellung der autarken Funktion des Gerätes über mehrere Jahre, die ein intensives Zusammenspiel der Disziplinen Elektronik und Software erforderte.

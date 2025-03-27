@@ -9,7 +9,7 @@ image = "traffic-diversion.jpg" # https://unsplash.com/de/fotos/-1mAafgRvWBU
 
 [taxonomies]
 projects=["Software Development (Embedded)"]
-skills=["Architecture", "C++", "Firmware",  "CI / CD", "Arm Cortex", "FreeRTOS", "Firmware Update", "MQTT", "CMake", "Python", "Azure DevOps"]
+skills=["Architecture", "C++", "Firmware",  "CI / CD", "Arm Cortex", "FreeRTOS", "Firmware Update", "MQTT", "CMake", "Python", "Pytest", "AWS IoT Core", "Azure DevOps"]
 +++
 
 The goal: municipalities, cities, roadworks

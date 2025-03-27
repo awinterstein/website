@@ -10,7 +10,7 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["Architecture", "C++", "Firmware", "Arm Cortex", "Python", "Gitlab", "Visual Studio", "Git"]
+skills=["Architecture", "C99", "C++", "Firmware", "Arm Cortex", "Python", "Gitlab", "Visual Studio", "Git"]
 +++
 
 The next generation of fully automatic coffee machines from a manufacturer of home appliances and commercial equipment was to be based on a new system architecture. To this end, the software architectures had to be further developed and a transition of the existing code base to the new architecture was needed.

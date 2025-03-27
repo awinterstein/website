@@ -14,34 +14,29 @@ Since 2023, I have continued my project work on a freelance basis and have alrea
 {{ resume_heading(title="Professional Experience") }}
 
 {% resume_station(time_span="2023 - Present", title="Software Architect & Developer", company="Self-employed", document_title="Show Project Reference (German)", document_file="projektreferenz-hekatron.pdf") %}
-<p>Freelance project work with a focus on embedded software architecture and software development with C++. In addition, consulting and implementation in the areas of continuous integration and testing.</p>
+<p>Freelance project work with a focus on embedded software architecture and software development with C++. In addition, consulting and implementation in the areas of CI and testing with Pytest and CppUtest as well as infrastructure with Ansible and Docker.</p>
 
 <h4>Projects:</h4>
-<ul><li><a href="/projects/optical-beam-smoke-detector/">Optical Beam Smoke Detector</a></li></ul>
+<ul><li><a href="/projects/optical-beam-smoke-detector/">Optical Beam Smoke Detector (C++ with FreeRTOS on Arm Cortex)</a></li></ul>
 {% end %}
 
 {% resume_station(time_span="2021 - 2023", title="Lead Embedded Software Architect", company="Zühlke Engineering GmbH", document_title="Show Employer's Reference (German)", document_file="arbeitszeugnis-zuhlke.pdf") %}
-<p>Architect and technical lead in the area of device creation. Focused on the following projects, which were all done in remote team setups:</p>
+<p>Architect and technical lead in the area of device creation in remote projects with a focus on C++ (bare metal / RTOS), CI & testing and firmware updates:</p>
 
 <ul>
-    <li>Guidance of a team located in Germany and Romania in developing
-    the software for the next generation of a coffee machine</li>
-    <li>Responsibility for the conception of the remote test setup for the
-    development of an IIoT delineator post; coaching of the technical
-    lead of that project</li>
-    <li>Responsibility for the software architecture as well as guidance
-    of the software team in the development of a module of a patient
-    monitor</li>
+    <li>Guidance of international software development teams</li>
+    <li>Responsibility for the software architecture</li>
+    <li>Responsibility for the conception and implementation of test environments for device developments (implemented with Pytest)</li>
+    <li>Coaching the technical lead in a project</li>
 </ul>
 
-<p>Additionally, besides the project work: Career coaching for colleagues
-in the embedded software development group.</p>
+<p>Additionally, besides the project work: Career coaching for colleagues in the embedded software development group.</p>
 
 <h4>Projects:</h4>
 <ul>
-<li><a href="/projects/next-generation-coffee-machines/">Architecture Consulting for Coffee Machines</a></li>
-<li><a href="/projects/beacon-for-traffic-diversions/">Digital Beacon for Traffic Diversions</a></li>
-<li><a href="/projects/module-of-patient-monitor/">Sensor Connection Module for a Patient Monitor</a></li>
+<li><a href="/projects/next-generation-coffee-machines/">Architecture Consulting for Coffee Machines (C and C++ Bare Metal on Arm Cortex)</a></li>
+<li><a href="/projects/beacon-for-traffic-diversions/">Digital Beacon for Traffic Diversions (C++ with FreeRTOS and AWS IoT Core)</a></li>
+<li><a href="/projects/module-of-patient-monitor/">Sensor Connection Module for a Patient Monitor (C++ with FreeRTOS and Qt)</a></li>
 </ul>
 {% end %}
 
@@ -61,9 +56,9 @@ in the embedded software development group.</p>
 
 <h4>Projects:</h4>
 <ul>
-<li><a href="/projects/rail-switch-sensor/">IoT Device for the Acquisition of Sensor Data</a></li>
-<li><a href="/projects/test-stand-for-motor-control/">GUI Component of a Test Stand Software for a Motor Control Unit (PyQt)</a></li>
-<li><a href="/projects/security-platform/">Security Platform</a></li>
+<li><a href="/projects/rail-switch-sensor/">IoT Device for the Acquisition of Sensor Data (C++ with FreeRTOS on Arm Cortex)</a></li>
+<li><a href="/projects/test-stand-for-motor-control/">GUI Component of a Test Stand Software for a Motor Control Unit (PyQt on Linux)</a></li>
+<li><a href="/projects/security-platform/">Security Platform (C++ on Linux with Yocto)</a></li>
 </ul>
 {% end %}
 
@@ -75,9 +70,9 @@ in the embedded software development group.</p>
 <ul>
 <li><a href="/projects/test-stand-for-oven/">Test Stand for an Oven (NI Teststand and C++ framework on Windows)</a></li>
 <lic><a href="/projects/platform-for-laboratory-analysis-devices/">Software Platform for Laboratory Analysis Devices (C++ and Python on Linux)</a></li>
-<li><a href="/projects/hot-drinks-preparation/">Household Appliance for Hot Drinks Preparation (FreeRTOS on ARM Cortex-M)</a></li>
+<li><a href="/projects/hot-drinks-preparation/">Household Appliance for Hot Drinks Preparation (C++ with FreeRTOS on Arm Cortex)</a></li>
 <li><a href="/projects/prototype-pump-heater-coffee-machine/">Prototype for a Coffee Machine (C++ on Arduino)</a></li>
-<li><a href="/projects/architecture-review-3d-printers/">Architecture Review of a Control Software for Industrial 3D Printers</a></li>
+<li><a href="/projects/architecture-review-3d-printers/">Architecture Review of a Control Software for Industrial 3D Printers (C++ and Qt)</a></li>
 </ul>
 {% end %}
 
@@ -87,8 +82,8 @@ in the embedded software development group.</p>
 <h4>Projects:</h4>
 <ul>
 <li><a href="/projects/diagnostic-tool-for-high-end-converters/">Diagnostic Tool for High-end Converters (Qt on Android)</a></li>
-<li><a href="/projects/control-system-for-chillers/">Control System for Innovative Chillers (FreeRTOS on ARM Cortex-M)</a></li>
-<li><a href="/projects/tracking-transported-good/">Proof of Concept for a System for Tracking Transported Goods</a></li>
+<li><a href="/projects/control-system-for-chillers/">Control System for Innovative Chillers (C++ with FreeRTOS on Arm Cortex)</a></li>
+<li><a href="/projects/tracking-transported-good/">Proof of Concept for a System for Tracking Transported Goods (C with FreeRTOS on Arm Cortex)</a></li>
 </ul>
 {% end %}
 
@@ -96,14 +91,14 @@ in the embedded software development group.</p>
 <p>Research in the field of computer-assisted interventions. Development of an ultrasound-based assistance system for minimally invasive implantation of markers around a tumor. Implementation and evaluation of the system in cooperation with medical personnel. Publication of the research results.</p>
 
 <h4>Project:</h4>
-<ul><li><a href="/projects/navigated-implantation-of-radio-therapy-markers/">Navigated Implantation of Radiation Therapy Markers</a></li></ul>
+<ul><li><a href="/projects/navigated-implantation-of-radio-therapy-markers/">Navigated Implantation of Radiation Therapy Markers (C++ and Qt)</a></li></ul>
 {% end %}
 
 {% resume_station(time_span="2013 - 2014", title="Research Assistant", company="Center for Advanced Security Research Darmstadt (CASED)", document_title="Show Employer's Reference (German)", document_file="arbeitszeugnis-cased.pdf") %}
 <p>Research in the fields of IT security and image processing, in a joint project of Fraunhofer IGD, Darmstadt University of Applied Sciences, the Federal Criminal Police Office and industrial partners. Development of algorithms for the automatic detection of the outer ear on 3D images. Publication of the research results.</p>
 
 <h4>Project:</h4>
-<ul><li><a href="/projects/detection-of-ears/">Detection of Ears on 3D Profile Images</a></li></ul>
+<ul><li><a href="/projects/detection-of-ears/">Detection of Ears on 3D Profile Images (Image Processing with MATLAB)</a></li></ul>
 {% end %}
 
 {% resume_station(time_span="2007 - 2014", title="System Administrator & Web Designer", company="Self-employed") %}

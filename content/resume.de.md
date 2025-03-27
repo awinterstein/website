@@ -14,27 +14,33 @@ Seit 2023 führe ich meine Projektarbeit freiberuflich weiter und habe das erste
 {{ resume_heading(title="Berufserfahrung") }}
 
 {% resume_station(time_span="seit 2023", title="Software Architect & Developer", company="Freiberufliche Arbeit", document_title="Projektreferenz anzeigen", document_file="projektreferenz-hekatron.pdf") %}
-<p>Selbständige Projektarbeit mit Fokus auf Embedded-Software-Architektur und auf Software-Entwicklung mit C++. Außerdem Beratung und Umsetzung in den Bereichen Continuous Integration und Testing.</p>
+<p>Selbständige Projektarbeit mit Fokus auf Embedded-Software-
+Architektur und auf Software-Entwicklung mit C++. Außerdem Be-
+ratung und Umsetzung in den Bereichen CI und Testing mit Pytest
+und CppUtest, sowie Infrastruktur mit Ansible und Docker.</p>
 
 <h4>Projekte:</h4>
-<ul><li><a href="/de/projects/optical-beam-smoke-detector/">Optischer Rauchwarnmelder</a></li></ul>
+<ul><li><a href="/de/projects/optical-beam-smoke-detector/">Optischer Rauchwarnmelder (C++ mit FreeRTOS auf Arm Cortex)</a></li></ul>
 {% end %}
 
 {% resume_station(time_span="2021 - 2023", title="Lead Embedded Software Architect", company="Zühlke Engineering GmbH", document_title="Arbeitszeugnis anzeigen", document_file="arbeitszeugnis-zuhlke.pdf") %}
-<p>Software-Architekt und Technical Lead im Bereich der Geräteentwicklung in folgenden remote durchgeführten Projekten:
+<p>Software-Architekt und Technical Lead im Bereich der Geräteentwicklung in mehreren remote durchgeführten Projekten, mit
+Schwerpunkten auf C++ (Bare-Metal / RTOS), CI & Testing sowie
+Firmware Updates:
 <ul>
-<li>Anleitung eines in Deutschland und Rumänien angesiedelten Teams eines Haushaltsgeräteherstellers bei der Softwareentwicklung für die nächste Kaffeemaschinengeneration</li>
-<li>Verantwortung für die Konzeption der Testumgebung bei der Entwicklung einer digitalen Warnbake; Coaching des Technical Leads in diesem Projekt</li>
-<li>Verantwortung für die Software-Architektur sowie Anleitung des Softwareteams bei der Entwicklung eines Moduls eines Patientenmonitors</li>
+<li>Anleitung internationaler Softwareentwicklungsteams</li>
+<li>Verantwortung für die Software-Architektur</li>
+<li>Verantwortung für Konzeption und Umsetzung von Testumgebungen für Geräteenwicklungen (Umgesetzt mit Pytest)</li>
+<li>Coaching u.a. des Technical Leads in einem Projekt</li>
 </ul></p>
 
 <p>Außerdem Karrierecoaching für Kolleginnen und Kollegen.</p>
 
 <h4>Projekte:</h4>
 <ul>
-<li><a href="/de/projects/next-generation-coffee-machines/">Architekturberatung für Kaffeemaschinen</a></li>
-<li><a href="/de/projects/beacon-for-traffic-diversions/">Digitale Warnbake für die Verkehrslenkung</a></li>
-<li><a href="/de/projects/module-of-patient-monitor/">Adaptionsmodul für einen Patientenmonitor</a></li>
+<li><a href="/de/projects/next-generation-coffee-machines/">Architekturberatung für Kaffeemaschinen (C und C++ Bare-Metal auf Arm Cortex)</a></li>
+<li><a href="/de/projects/beacon-for-traffic-diversions/">Digitale Warnbake für die Verkehrslenkung (C++ mit FreeRTOS und AWS IoT Core)</a></li>
+<li><a href="/de/projects/module-of-patient-monitor/">Adaptionsmodul für einen Patientenmonitor (C++ mit FreeRTOS und Qt)</a></li>
 </ul>
 {% end %}
 
@@ -54,9 +60,9 @@ Schulungen und Mentoring. Durchführung von Bewerberinterviews.</p>
 
 <h4>Projekte:</h4>
 <ul>
-<li><a href="/de/projects/rail-switch-sensor/">IoT-Gerät zur Erfassung von Sensordaten</a></li>
-<li><a href="/de/projects/test-stand-for-motor-control/">GUI-Komponente einer Prüfstandstoftware (PyQt)</a></li>
-<li><a href="/de/projects/security-platform/">Security Platform</a></li>
+<li><a href="/de/projects/rail-switch-sensor/">IoT-Gerät zur Erfassung von Sensordaten (C++ mit FreeRTOS auf Arm Cortex)</a></li>
+<li><a href="/de/projects/test-stand-for-motor-control/">GUI-Komponente einer Prüfstandstoftware (PyQt auf Linux)</a></li>
+<li><a href="/de/projects/security-platform/">Security Platform (C++ auf Linux mit Yocto)</a></li>
 </ul></p>
 {% end %}
 
@@ -68,9 +74,9 @@ Schulungen und Mentoring. Durchführung von Bewerberinterviews.</p>
 <ul>
 <li><a href="/de/projects/test-stand-for-oven/">Testsystem für Backofensteuerung (NI Teststand und C++-Framework unter Windows)</a></li>
 <li><a href="/de/projects/platform-for-laboratory-analysis-devices/">Softwareplattform für Laboranalysegeräte (C++ und Python unter Linux)</a></li>
-<li><a href="/de/projects/hot-drinks-preparation/">Haushaltsgerät zur Heißgetränkezubereitung (FreeRTOS auf ARM Cortex-M)</a></li>
-<li><a href="/de/projects/prototype-pump-heater-coffee-machine/">Konzeptaufbau für ein Haushaltsgerät</a></li>
-<li><a href="/de/projects/architecture-review-3d-printers/">Architektur-Review von Software industrieller 3D-Drucker</a></li>
+<li><a href="/de/projects/hot-drinks-preparation/">Haushaltsgerät zur Heißgetränkezubereitung (C++ mit FreeRTOS auf Arm Cortex)</a></li>
+<li><a href="/de/projects/prototype-pump-heater-coffee-machine/">Konzeptaufbau für ein Haushaltsgerät (C++ auf Arduiono)</a></li>
+<li><a href="/de/projects/architecture-review-3d-printers/">Architektur-Review von Software industrieller 3D-Drucker (C++ und Qt)</a></li>
 </ul>
 {% end %}
 
@@ -80,8 +86,8 @@ Schulungen und Mentoring. Durchführung von Bewerberinterviews.</p>
 <h4>Projekte:</h4>
 <ul>
 <li><a href="/de/projects/diagnostic-tool-for-high-end-converters/"> Diagnosetool für Frequenzumrichter (Qt auf Android)</a></li>
-<li><a href="/de/projects/control-system-for-chillers/">Regelung einer Klimaanlage (FreeRTOS auf ARM Cortex-M)</a></li>
-<li><a href="/de/projects/tracking-transported-good/">Proof-of-Concept für ein System zum Tracking transportierter Waren</a></li>
+<li><a href="/de/projects/control-system-for-chillers/">Regelung einer Klimaanlage (C++ mit FreeRTOS auf Arm Cortex)</a></li>
+<li><a href="/de/projects/tracking-transported-good/">Proof-of-Concept für ein System zum Tracking transportierter Waren (C mit FreeRTOS auf Arm Cortex)</a></li>
 </ul>
 {% end %}
 
@@ -89,13 +95,13 @@ Schulungen und Mentoring. Durchführung von Bewerberinterviews.</p>
 {% resume_station(time_span="2013 - 2014", title="Wissenschaftliche Hilfskraft", company="Deutsches Krebsforschungszentrum Heidelberg (DKFZ)", document_title="Arbeitszeugnis anzeigen", document_file="arbeitszeugnis-dkfz.pdf") %}
 <p>Forschung im Bereich der Computer-assistierten Interventionen. Entwicklung und Evaluierung eines ultraschallbasierten Assistenzsystems für die minimalinvasive Implantierung von Markern um einen Tumor in Zusammenarbeit mit medizinischem Personal. Inklusive Publizierung der Forschungsergebnisse.</p>
 <h4>Projekt:</h4>
-<ul><li><a href="/de/projects/navigated-implantation-of-radio-therapy-markers/">Navigierte Implantierung von Bestrahlungsmarkern</a></li></ul>
+<ul><li><a href="/de/projects/navigated-implantation-of-radio-therapy-markers/">Navigierte Implantierung von Bestrahlungsmarkern (C++ und Qt)</a></li></ul>
 {% end %}
 
 {% resume_station(time_span="2011 - 2013", title="Wissenschaftliche Hilfskraft", company="Center for Advanced Security Research Darmstadt (CASED)", document_title="Arbeitszeugnis anzeigen", document_file="arbeitszeugnis-cased.pdf") %}
 <p>Forschung in den Bereichen IT-Security und Bildverarbeitung, in einem Gemeinschaftsprojekt von Fraunhofer IGD, Hochschule Darmstadt, Bundeskriminalamt und Industriepartnern. Inklusive Publizierung der Forschungsergebnisse.</p>
 <h4>Projekt:</h4>
-<ul><li><a href="/de/projects/detection-of-ears/">Detektion von Ohren auf 3D-Profilbildern</a></li></ul>
+<ul><li><a href="/de/projects/detection-of-ears/">Detektion von Ohren auf 3D-Profilbildern (Bildverarbeitung mit MATLAB)</a></li></ul>
 {% end %}
 
 {% resume_station(time_span="2007 - 2014", title="System-Administrator & Web-Designer", company="Freiberufliche Arbeit") %}

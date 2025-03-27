@@ -10,12 +10,12 @@ top_project = true
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
-skills=["Architecture", "Tech Lead", "C++", "Firmware",  "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "Azure DevOps", "Polarion", "Google Test", "Qt", "Ansible", "Scrum", "Git"]
+skills=["Architecture", "Tech Lead", "C++", "Firmware",  "CI / CD", "Arm Cortex", "FreeRTOS", "CMake", "Python", "Firmware Update", "Azure DevOps", "Polarion", "Google Test", "Pytest", "Qt", "Ansible", "Scrum", "Git"]
 +++
 
 The client needed a new connection module to connect additional sensors via *USB* to their existing hardware, which was only able to provide an *UART* interface. The module was supposed to provide the sensor data and allow for sensor configuration via a well-defined and structured protocol. This protocol was also to be defined and developed in the project.
 
-We did the development in a team of mechanic, electronic and firmware developers and provided the module ready for integration to the client. This included automated and manual testing on the unit test and integration test layer of the *V-model*.
+We did the development in a team of mechanic, electronic and firmware developers and **provided the module ready for integration to the client**. This included automated and manual testing on the unit test and integration test layer of the *V-model*.
 
 The development was done according to the *IEC 62304* standard and the *AUTOSAR C++14* guidelines.
 
