@@ -1,0 +1,1 @@
+yocto-swupdate-remote-server.md

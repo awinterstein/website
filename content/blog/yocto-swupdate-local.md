@@ -3,6 +3,7 @@ title = "Setting up SWUpdate with Yocto"
 description = "Guide for integrating firmware updates with the SWUpdate layer into a Yocto project using a Raspberry Pi as an example device."
 authors = ["Adrian Winterstein" ]
 date = "2025-02-06"
+updated = "2025-03-27"
 
 [taxonomies]
 blog-tags=["Yocto"]
@@ -76,19 +77,46 @@ For the update strategy [Double Copy with Fallback](https://sbabic.github.io/swu
 Create the file `wic/sd-card-layout.wks` in your Yocto layer and insert the following content to create the partitions:
 
 ```bash
-part /boot --source bootimg-partition --ondisk mmcblk0 --fstype=vfat --label boot --active --align 4096 --size 100
-part / --source rootfs --ondisk mmcblk0 --fstype=ext4 --label root --align 4096
-part --source rootfs --ondisk mmcblk0 --fstype=ext4 --label root2 --align 4096
-part --size 1G --ondisk mmcblk0 --fstype=ext4 --label data --align 4096
+part /boot --size 100M --source bootimg-partition --ondisk mmcblk0 --fstype=vfat --label boot --active --align 4096
+part / --size 200M --source rootfs --ondisk mmcblk0 --fstype=ext4 --label root --align 4096
+part --size 200M --source rootfs --ondisk mmcblk0 --fstype=ext4 --label root2 --align 4096
+part /media --size 1G --ondisk mmcblk0 --fstype=ext4 --label data --align 4096
 ```
 
-The size of the last partition can be adapted to your needs or the partition can be left out completely.
+The size of primary and secondary root partition must be large enough to accommodate potential future growth of your update images. The size of the last partition can be adapted to your needs or the partition can be left out completely. In this guide the last partition is used to store the update image for testing the local update.
 
-This partitioning will be used when creating an image via Yocto, if you add the following to your `layer.conf`:
+The partitioning will be used when creating an SD card image via Yocto, if you add the following to your `layer.conf`:
 
 ```bash
 # Definition of the partitions on the SD card
 WKS_FILE = "sd-card-layout.wks"
+```
+
+[Wic](https://docs.yoctoproject.org/next/dev-manual/wic.html) would automatically create an `fstab` according to the defined partitions. However, this would only be generated into the SD card image, but not into the update image of SWUdate. Hence, you need to manually define your own `fstab` in `meta-swupdate-raspberrypi/recipes-core/base-files/base-files/fstab`:
+
+```bash
+/dev/root            /                    auto       defaults                           1  1
+proc                 /proc                proc       defaults                           0  0
+devpts               /dev/pts             devpts     mode=0620,ptmxmode=0666,gid=5      0  0
+tmpfs                /run                 tmpfs      mode=0755,nodev,nosuid,strictatime 0  0
+tmpfs                /var/volatile        tmpfs      defaults                           0  0
+
+/dev/mmcblk0p1       /boot                vfat       defaults                           0  0
+/dev/mmcblk0p4       /media               ext4       defaults                           0  0
+```
+
+To install the custom `fstab` into your image, the append file `meta-swupdate-raspberrypi/recipes-core/base-files/base-files_%.bbappend` needs to be added with the following content:
+
+```bash
+FILESEXTRAPATHS:prepend := "${THISDIR}/${PN}:"
+```
+
+The automatic `fstab` creation by Wic needs to be disabled then as follows in your `layer.conf`:
+
+```bash
+# Do not update the fstab file according to the SD card layout; a specific fstab
+# file is provided instead, because it is also needed within the update image
+WIC_CREATE_EXTRA_ARGS = "--no-fstab-update"
 ```
 
 ## Update Image Creation
@@ -245,14 +273,6 @@ bitbake -c diffconfig swupdate
 
 The location of the generated configuration fragment will be shown in the command output. Copy the file into the directory, where your `swupdate` recipes are located (e.g., `recipes-core/swupdate`). Be aware: If you already have a `fragment.cfg` there, you should not overwrite this file, but integrate the new changes there. The `diffconfig` command always generates the differences compared to the configuration that was generated via Yocto recipes before.
 
-You might get errors about changed basehash values when building the image with `bitbake` afterwards. Just execute the commands that are recommended in the error message then:
-
-```bash
-bitbake swupdate -cdo_fetch -Snone
-bitbake swupdate -cdo_fetch -Sprintdiff
-```
-
-
 ## Connection with Bootloader (U-Boot)
 
 SWUpdate needs to work together with the bootloader for the switching between the primary and the secondary boot partition after the installation of an update. In this example U-Boot is used, which is the default for SWUpdate.
@@ -336,7 +356,6 @@ After baking the `upate-image`, flash the `core-image-base` onto a SD card and c
 Boot the device, login as the root user and execute the following:
 
 ```bash
-mount /dev/mmcblk0p4 /media
 swupdate -e stable,copy2 -H raspberrypi0-2w-64:1.0 -p 'reboot' -i /media/update-image-* -v
 ```
 
@@ -352,5 +371,4 @@ $ swupdate -g
 ## Next Steps
 
 The local update could be extended to automatically install updates from an USB stick, as soon as it gets connected.
-
-An alternative would be the downloading of update images from an HTTP server. I will show this in a follow-up post later on.
+An alternative would be the downloading of update images from an HTTP server. I'm showing this in the follow-up post [Setting up Remote SWUpdate with Yocto](/blog/yocto-swupdate-remote-server).
