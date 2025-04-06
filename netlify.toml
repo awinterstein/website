@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "npm install tailwindcss @tailwindcss/cli && tailwindcss -i themes/project-portfolio/src/css/main.css -o static/css/main.css --minify && zola build --base-url https://winterstein.netlify.app"
+command = "zola build --base-url https://winterstein.netlify.app"
 
 [build.environment]
 # Set the version name that you want to use and Netlify will automatically use it.
@@ -11,4 +11,4 @@ ZOLA_VERSION = "0.19.2"
 # preview site.  We do this using the Netlify environment variable
 # `$DEPLOY_PRIME_URL`.
 [context.deploy-preview]
-command = "npm install tailwindcss @tailwindcss/cli && tailwindcss -i themes/project-portfolio/src/css/main.css -o static/css/main.css --minify && zola build --base-url $DEPLOY_PRIME_URL"
+command = "zola build --base-url $DEPLOY_PRIME_URL"
