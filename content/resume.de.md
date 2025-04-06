@@ -13,10 +13,7 @@ Seit 2023 führe ich meine Projektarbeit freiberuflich weiter und habe das erste
 {{ resume_heading(title="Berufserfahrung") }}
 
 {% resume_station(time_span="seit 2023", title="Software Architect & Developer", company="Freiberufliche Arbeit", document_title="Projektreferenz anzeigen", document_file="projektreferenz-hekatron.pdf") %}
-<p>Selbständige Projektarbeit mit Fokus auf Embedded-Software-
-Architektur und auf Software-Entwicklung mit C++. Außerdem Be-
-ratung und Umsetzung in den Bereichen CI und Testing mit Pytest
-und CppUtest, sowie Infrastruktur mit Ansible und Docker.</p>
+<p>Selbständige Projektarbeit mit Fokus auf Embedded-Software-Architektur und auf Software-Entwicklung mit C++. Außerdem Beratung und Umsetzung in den Bereichen CI und Testautomatisierung mit Pytest und CppUtest, sowie Infrastruktur mit Ansible und Docker.</p>
 
 <h4>Projekte:</h4>
 <ul><li><a href="/de/projects/optical-beam-smoke-detector/">Optischer Rauchwarnmelder (C++ mit FreeRTOS auf Arm Cortex)</a></li></ul>
@@ -24,7 +21,7 @@ und CppUtest, sowie Infrastruktur mit Ansible und Docker.</p>
 
 {% resume_station(time_span="2021 - 2023", title="Lead Embedded Software Architect", company="Zühlke Engineering GmbH", document_title="Arbeitszeugnis anzeigen", document_file="arbeitszeugnis-zuhlke.pdf") %}
 <p>Software-Architekt und Technical Lead im Bereich der Geräteentwicklung in mehreren remote durchgeführten Projekten, mit
-Schwerpunkten auf C++ (Bare-Metal / RTOS), CI & Testing sowie
+Schwerpunkten auf C++ (Bare-Metal / RTOS), CI & Testautomatisierung sowie
 Firmware Updates:
 <ul>
 <li>Anleitung internationaler Softwareentwicklungsteams</li>

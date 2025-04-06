@@ -13,14 +13,14 @@ Since 2023, I have continued my project work on a freelance basis and have alrea
 {{ resume_heading(title="Professional Experience") }}
 
 {% resume_station(time_span="2023 - Present", title="Software Architect & Developer", company="Self-employed", document_title="Show Project Reference (German)", document_file="projektreferenz-hekatron.pdf") %}
-<p>Freelance project work with a focus on embedded software architecture and software development with C++. In addition, consulting and implementation in the areas of CI and testing with Pytest and CppUtest as well as infrastructure with Ansible and Docker.</p>
+<p>Freelance project work with a focus on embedded software architecture and software development with C++. In addition, consulting and implementation in the areas of CI and test automation with Pytest and CppUtest as well as infrastructure with Ansible and Docker.</p>
 
 <h4>Projects:</h4>
 <ul><li><a href="/projects/optical-beam-smoke-detector/">Optical Beam Smoke Detector (C++ with FreeRTOS on Arm Cortex)</a></li></ul>
 {% end %}
 
 {% resume_station(time_span="2021 - 2023", title="Lead Embedded Software Architect", company="Zühlke Engineering GmbH", document_title="Show Employer's Reference (German)", document_file="arbeitszeugnis-zuhlke.pdf") %}
-<p>Architect and technical lead in the area of device creation in remote projects with a focus on C++ (bare metal / RTOS), CI & testing and firmware updates:</p>
+<p>Architect and technical lead in the area of device creation in remote projects with a focus on C++ (bare metal / RTOS), CI & test automation and firmware updates:</p>
 
 <ul>
     <li>Guidance of international software development teams</li>
