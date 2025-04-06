@@ -1,9 +1,8 @@
 +++
 title = "Lebenslauf"
-date = "2024-01-01"
 +++
 
-<i class="bi bi-file-earmark-pdf mr-2"></i>*Es gibt auch ein <a href="/documents/lebenslauf.pdf" target="_blank">PDF-Dokument meines Lebenslaufs</a>.*
+{{ icon(type="pdf", title="") }}*Es gibt auch ein <a href="/documents/lebenslauf.pdf" target="_blank">PDF-Dokument meines Lebenslaufs</a>.*
 
 <img class="rounded-full h-40 w-40 md:float-right md:ml-8 md:mr-8" src="/adrian.png" />
 

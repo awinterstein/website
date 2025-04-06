@@ -1,6 +1,5 @@
 +++
 title = "Privacy Policy"
-date = "2024-12-02"
 +++
 
 The following information provides a simple overview of what happens to your personal data when you visit this website.

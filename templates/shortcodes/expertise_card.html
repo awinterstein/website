@@ -1,16 +1,14 @@
+{% import "macros/content.html" as content -%}
 <div class="flex sm:gap-4 gap-1">
     <div>
-        <i class="bi bi-{{ icon }}" style="font-size: 2rem;"></i>
+        {{ content::icon(id=icon, class="h-8 w-8") }}
     </div>
 
     <div class="flex flex-col gap-2">
-        <h3 class="text-xl font-semibold text-black dark:text-white">{{ title }}
-        </h3>
-        <p class="text-gray-900 dark:text-gray-100">
+        <h3 class="text-xl font-semibold">{{ title }}</h3>
+        <p>
             <span class="block mb-2">{{ body | safe }}</span>
-            {% if link %}<a href="{{ link }}">{% if lang == "de" %}Projekte ansehen{% else %}View Projects{% endif %}<i
-                    class="bi bi-arrow-right pl-2"></i></a>{%
-            endif %}
+            {% if link %}<a href="{{ link }}">{% if lang == "de" %}Projekte ansehen{% else %}View Projects{% endif %}{{ content::icon(id="arrow_right", class="ml-2 h-5 w-5") }}</a>{% endif %}
         </p>
     </div>
 </div>

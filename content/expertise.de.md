@@ -8,11 +8,11 @@ render = false
 Entwicklung von (Embedded-)Software in C++ mit oder ohne Echtzeitbetriebssystem wie FreeRTOS - oder für Linux. Einsatz moderner C++-Standards und Best Practices.
 {% end %}
 
-{% expertise_card(title="Software-Architektur", icon="lightbulb-fill", link="/de/skills/architecture") %}
+{% expertise_card(title="Software-Architektur", icon="lightbulb", link="/de/skills/architecture") %}
 Definition und Dokumentation von Software-Architekturen. Bevorzugt in interdisziplinären Teams in Zusammenarbeit mit zum Beispiel Elektronik- und Mechanik-Architekten.
 {% end %}
 
-{% expertise_card(title="Technische Leitung", icon="people-fill", link="/de/skills/tech-lead") %}
+{% expertise_card(title="Technische Leitung", icon="people", link="/de/skills/tech-lead") %}
 Technische Leitung (verteilter) internationaler Software-Entwicklungsteams. Klärung von Anforderungen und agile Umsetzung mit dem Entwicklungsteam.
 {% end %}
 

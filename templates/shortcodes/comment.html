@@ -1,15 +1,16 @@
+{% import "macros/content.html" as content -%}
 <div class="comment flex mt-2 mb-4 {% if level > 1 %}ml-8{%endif %}">
     <a href="{{ user_url }}" target="_blank" rel="external nofollow"><img src="{{ avatar }}" class="h-12 w-12 object-cover rounded-full mr-2"></a>
     <div>
         <div>
-            <a href="{{ user_url }}" target="_blank" rel="external nofollow" class="mr-12">{{ fullname }}</a>
+            <a href="{{ user_url }}" target="_blank" rel="external nofollow" class="mr-12 no-underline hover:underline">{{ fullname }}</a>
         </div>
-        <a href="{{ comment_url }}" target="_blank" rel="external nofollow" class="text-sm">{{ datetime }}</a>
+        <a href="{{ comment_url }}" target="_blank" rel="external nofollow" class="text-sm no-underline hover:underline">{{ datetime }}</a>
         <div class="mt-2">
             {{ body | safe }}
         </div>
         {% if favorites > 0 %}
-        <a href="{{ comment_url }}/favourites" target="_blank"><div class="text-sm"><i class="bi bi-heart-fill mr-1"></i>{{ favorites }}</div></a>
+        <a href="{{ comment_url }}/favourites" target="_blank" class="no-underline hover:underline"><div class="text-sm">{{ content::icon(id="heart") }}{{ favorites }}</div></a>
         {% endif %}
     </div>
 </div>

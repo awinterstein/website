@@ -15,7 +15,7 @@ skills=["Architecture", "Tech Lead", "C++", "Firmware", "CI / CD", "Arm Cortex",
 
 In einem interdisziplinären Team aus Firmware-, Elektronik- und Mechanikentwicklern, Physikern und Prüfingenieuren haben wir den Rauchmelder mit einem **Fokus auf sehr hohe Empfindlichkeit in allen Betriebszuständen** entwickelt.
 
-Die Firmware wurde für einen *Arm Arm Cortex* Controller in *C++* mit *FreeRTOS* als Echtzeitbetriebssystem entwickelt. Insbesondere der Messteil der Firmware musste **Echtzeitanforderungen** erfüllen. Die Rauchpegelberechnung musste verschiedene Kompensationen auf das gemessene Signal anwenden, um Signalschwankungen aufgrund des großen unterstützten Temperaturbereichs und der zunehmenden Geräteverschmutzung während der Lebensdauer des Melders zu berücksichtigen.
+Die Firmware wurde für einen *Arm Cortex* Controller in *C++* mit *FreeRTOS* als Echtzeitbetriebssystem entwickelt. Insbesondere der Messteil der Firmware musste **Echtzeitanforderungen** erfüllen. Die Rauchpegelberechnung musste verschiedene Kompensationen auf das gemessene Signal anwenden, um Signalschwankungen aufgrund des großen unterstützten Temperaturbereichs und der zunehmenden Geräteverschmutzung während der Lebensdauer des Melders zu berücksichtigen.
 
 ## Verantwortlichkeiten
 
@@ -23,4 +23,4 @@ Ich war verantwortlich für die **Firmware-Architektur** des Melders und für di
 
 Zusätzlich habe ich Teile der Melder-Firmware implementiert, zum Beispiel die Rauchpegelberechnung, das **Firmware-Update** und die **Persistenzschicht**. Und ich habe die Konzeption und Implementierung des Build-Systems mit *CMake* und der kontinuierlichen Integration im CI / CD-Tool *TeamCity* durchgeführt. Für die Automatisierung reproduzierbarer Build- und Testumgebungen habe ich in diesem Zusammenhang *Docker* und *Ansible* eingesetzt.
 
-<a href="/documents/projektreferenz-hekatron.pdf" target="_blank">Projektreferenz anzeigen<i class="bi bi-filetype-pdf ml-2"></i></a>
+<a href="/documents/projektreferenz-hekatron.pdf" target="_blank">Projektreferenz anzeigen{{ icon(type="pdf") }}</a>

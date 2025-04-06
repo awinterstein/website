@@ -31,4 +31,4 @@ And did the conception and implementation of the build system with *CMake* and o
 continuous integration in the *TeamCity* CI / CD tool.
 For the automation of reproducible build and test environments, I used *Docker* and *Ansible*.
 
-<a href="/documents/projektreferenz-hekatron.pdf" target="_blank">View Reference (German)<i class="bi bi-filetype-pdf ml-2"></i></a>
+<a href="/documents/projektreferenz-hekatron.pdf" target="_blank">View Reference (German){{ icon(type="pdf") }}</a>

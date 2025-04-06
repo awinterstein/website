@@ -8,11 +8,11 @@ render = false
 Developing (embedded) software in C++ with or without real-time operating systems like FreeRTOS - or on Linux. Use of modern C++ standards and best practices.
 {% end %}
 
-{% expertise_card(title="Software Architecture", icon="lightbulb-fill", link="/skills/architecture") %}
+{% expertise_card(title="Software Architecture", icon="lightbulb", link="/skills/architecture") %}
 Definition and documentation of software architectures. Preferably in interdisciplinary teams together with e.g., electronics and mechanics architects.
 {% end %}
 
-{% expertise_card(title="Technical Lead", icon="people-fill", link="/skills/tech-lead") %}
+{% expertise_card(title="Technical Lead", icon="people", link="/skills/tech-lead") %}
 Technical leading of (distributed) international software development teams. Clarification of requirements and agile implementation with the development team.
 {% end %}
 

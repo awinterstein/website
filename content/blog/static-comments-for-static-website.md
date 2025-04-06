@@ -33,14 +33,12 @@ As long as the comments file has the same filename as the Markdown file of the b
 
   {#- Show comments, if there are any in the comments file. -#}
   {%- if comments.content -%}
-    <h2>{{ trans(key="comments", lang=lang) }}</h2>
+    <h2>Comments</h2>
     {{ comments.content | safe }}
   {%- endif -%}
 
   {#- Show link to the corresponding Mastodon post. -#}
-  <a href="https://{{ page.extra.comments.host }}/@{{ page.extra.comments.username }}/{{ page.extra.comments.id }}"
-      title="{{ trans(key='comment_mastodon_link_title', lang=lang) }}"
-      target="_blank" class="italic text-center mt-2"><i class="bi bi-mastodon mr-1"></i>{{ trans(key='comment_mastodon_link_text', lang=lang) }}</a>
+  <a href="https://{{ page.extra.comments.host }}/@{{ page.extra.comments.username }}/{{ page.extra.comments.id }}" target="_blank">Comment on Mastodon</a>
 
 {%- endif -%}
 ```
@@ -59,7 +57,7 @@ For the comments itself, I added a [shortcode](https://www.getzola.org/documenta
             {{ body | safe }}
         </div>
         {% if favorites > 0 %}
-        <a href="{{ comment_url }}/favourites" target="_blank"><div class="text-sm"><i class="bi bi-heart-fill mr-1"></i>{{ favorites }}</div>
+        <a href="{{ comment_url }}/favourites" target="_blank"><div class="text-sm">{{ content::icon(id="heart") }}{{ favorites }}</div>
         {% endif %}
     </div>
 </div>

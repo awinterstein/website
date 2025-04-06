@@ -1,6 +1,10 @@
-{% extends "project-portfolio/templates/blog-page.html" %}
+{% extends "project-portfolio/templates/page.html" %}
 
-{% block blog_footer %}
+{%- block extra_headers -%}
+<meta name="fediverse:creator" content="@awinterstein@mastodon.social">
+{%- endblock -%}
+
+{% block page_footer %}
 {#- Show comments and link to Mastodon post, if the comments variables are set for the page. -#}
 {%- if page.extra.comments.host and page.extra.comments.username and page.extra.comments.id -%}
 <hr class="mb-2"></hr>
@@ -11,13 +15,14 @@
 
 {#- Show comments, if there are any in the comments file. -#}
 {%- if comments.content -%}
-<h2>{{ trans(key="comments", lang=lang) }}</h2>
+<h2>{{ i18n.comments }}</h2>
 {{ comments.content | safe }}
 {%- endif -%}
 
 {#- Show link to the corresponding Mastodon post. -#}
+<div class="flex flex-col  items-center mt-2">
 <a href="https://{{ page.extra.comments.host }}/@{{ page.extra.comments.username }}/{{ page.extra.comments.id }}"
-    title="{{ trans(key='comment_mastodon_link_title', lang=lang) }}" target="_blank" class="italic text-center mt-2"><i
-        class="bi bi-mastodon mr-1"></i>{{ trans(key='comment_mastodon_link_text', lang=lang) }}</a>
+    title="{{ trans(key='comment_mastodon_link_title', lang=lang) }}" target="_blank" class="italic">{{ content::icon(id="mastodon") }}{{ trans(key='comment_mastodon_link_text', lang=lang) }}</a>
+</div>
 {%- endif -%}
 {% endblock %}

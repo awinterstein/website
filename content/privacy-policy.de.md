@@ -1,6 +1,5 @@
 +++
 title = "Datenschutzerklärung"
-date = "2024-12-02"
 +++
 
 Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Webseite besuchen.

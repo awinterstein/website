@@ -14,26 +14,17 @@ generate_feeds = true
 
 # The taxonomies to be rendered for the site and their configuration of the default languages
 taxonomies = [
-    {name = "projects", paginate_by = 5, feed = false},
-    {name = "skills", paginate_by = 5, feed = false},
-    {name = "blog-tags", paginate_by = 5, feed = true},
+    { name = "projects", paginate_by = 5, feed = false },
+    { name = "skills", paginate_by = 5, feed = false },
+    { name = "blog-tags", paginate_by = 5, feed = true },
 ]
 
 title = "Adrian Winterstein"
 
-[translations]
-language_symbol = "🇬🇧"
-home = "Home"
-projects = "Projects"
-skills = "Skills"
-read_more = "Read More"
-skills_technologies = "Skills & Technologies"
-main_skills = "Main Skills" # The heading for the main skills list (only relevant, if main_skills_threshold is set)
-other_skills = "Additional Skills" # The heading for the list of the other skills (only relevant, if main_skills_threshold is set)
-words = "words"
-minutes = "minutes"
-comments = "Comments"
+[search]
+index_format = "elasticlunr_json"
 
+[translations]
 comment_mastodon_link_text = "Respond to this post on Mastodon."
 comment_mastodon_link_title = "Since Mastodon is decentralized, you can use your existing account hosted by another Mastodon server or any compatible platform."
 
@@ -43,46 +34,32 @@ comment_mastodon_link_title = "Since Mastodon is decentralized, you can use your
 # as well as its own search configuration and translations (see above for details on those)
 [languages.de]
 title = "Adrian Winterstein"
+
+build_search_index = true
+
 taxonomies = [
-    {name = "projects", paginate_by = 5, feed = false},
-    {name = "skills", paginate_by = 5, feed = false},
-    {name = "blog-tags", paginate_by = 5, feed = true},
+    { name = "projects", paginate_by = 5, feed = false },
+    { name = "skills", paginate_by = 5, feed = false },
+    { name = "blog-tags", paginate_by = 5, feed = true },
 ]
 
 [languages.de.translations]
-language_symbol = "🇩🇪"
-home = "Home"
-projects = "Projekte"
-skills = "Qualifikationen"
-read_more = "Weiterlesen"
-skills_technologies = "Qualifikationen & Technologien"
-main_skills = "Top-Fähigkeiten" # The heading for the main skills list (only relevant, if main_skills_threshold is set)
-other_skills = "Weitere Fähigkeiten" # The heading for the list of the other skills (only relevant, if main_skills_threshold is set)
-words = "Wörter"
-minutes = "Minuten"
-comments = "Kommentare"
-
 comment_mastodon_link_text = "Antworte auf diesen Post auf Mastodon."
 comment_mastodon_link_title = "Da Mastodon dezentral organisiert ist, kann ein bestehendes Konto von einem anderen Mastodon-Server oder einer anderen kompatiblen Plattform verwendet werden."
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customized by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 highlight_theme = "css"
-highlight_themes_css = [
-  { theme = "ayu-dark", filename = "syntax-dark.css" },
-  { theme = "ayu-light", filename = "syntax-light.css" },
-]
 
 render_emoji = true
 
 [extra]
 # Put all your custom variables here
 
-enable_search = false
-enable_sidebar = false
-enable_multilingual = true
+daisyui_theme_light = "winterstein-light"
+daisyui_theme_dark = "winterstein-dark"
+
+enable_search = true
 enable_expertise = true
 
 main_skills_threshold = 5
@@ -90,24 +67,23 @@ main_skills_threshold = 5
 [extra.navbar]
 title = "Adrian Winterstein"
 
-items = [
-    { lang = "en", links = [
-        { url = "resume", name = "CV" },
-    ] },
-    { lang = "de", links = [
-        { url = "resume", name = "Lebenslauf" },
-    ] },
-     { lang = "en", links = [
-        { url = "blog", name = "Blog" },
-    ] },
-    { lang = "de", links = [
-        { url = "blog", name = "Blog" },
-    ] }
+links = [
+    { url = "projects", i18n_key = "projects" },
+    { url = "skills", i18n_key = "skills" },
+    { url = "resume", i18n_key = "resume" },
+    { url = "blog", i18n_key = "blog" },
 ]
+
+[extra.footer]
+links = [
+    { url = "impressum", i18n_key = "impressum" },
+    { url = "privacy-policy", i18n_key = "privacy_policy" },
+]
+
+notice = 'Adrian Winterstein'
 
 # Index page
 [extra.index]
-title = "Adrian Winterstein"
 slogan = "Empowering interdisciplinary, distributed teams"
 image = "adrian.png"
 image_alt = "Picture of Adrian Winterstein"

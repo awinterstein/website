@@ -1,13 +1,13 @@
+{% import "macros/content.html" as content -%}
 <div class="flex mt-4">
     <span class="hidden md:inline-block w-3/12 items-start mr-4">{{ time_span }}</span>
     <span class="inline-block w-full md:w-8/12 mb-2">
         <h3>{{ title }}</h3>
         <span class="sm:inline-block md:hidden text-gray-400 italic">{{ time_span }} | </span>
-        <span class="text-gray-400 italic">{{ company }}</span>
+        <span class="text-gray-400 italic mr-4">{{ company }}</span>
         {% if document_file -%}
-        <a href="/documents/{{ document_file }}" target="_blank">
-            <i {% if document_title %}title="{{ document_title}}" {% endif %} class="bi bi-file-earmark-pdf ml-4"
-                style="font-size: 1rem;"></i>
+        <a href="/documents/{{ document_file }}" {% if document_title %}title="{{ document_title}}" {% endif %} target="_blank">
+            {{ content::icon(id="pdf") }}
         </a>
         {%- endif -%}
     </span>
