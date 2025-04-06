@@ -19,9 +19,11 @@ Key Fingerprint: `3F3C 51E6 5FDE 9CAC 3266 D1DE 83F3 A830 7A46 73C5`
 ## Sales Tax Identification
 
 Sales tax identification number according to § 27 sales tax law:\
-DE362375916
+`DE362375916`
 
 ## Professional Indemnity Insurance
+
+<img src="/hiscox.svg" alt="Insurance State 2025: Insured by Hiscox" class="float-left size-24 mr-6 mb-4">
 
 Hiscox SA\
 Arnulfstraße 31\

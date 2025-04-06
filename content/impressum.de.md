@@ -18,9 +18,11 @@ Key Fingerprint: `3F3C 51E6 5FDE 9CAC 3266 D1DE 83F3 A830 7A46 73C5`
 ## Umsatzsteuer-Identifikationsnummer
 
 Umsatzsteuer-Identifikationsnummer gemäß § 27 UStG:\
-DE362375916
+`DE362375916`
 
 ## Berufshaftpflichtversicherung
+
+<img src="/hiscox.svg" alt="Versicherungsstatus 2025: Versichert von Hiscox" class="float-left size-24 mr-6 mb-4">
 
 Hiscox SA\
 Arnulfstraße 31\
