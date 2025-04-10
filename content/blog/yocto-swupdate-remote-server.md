@@ -1,7 +1,7 @@
 +++
 title = "Setting up Remote SWUpdate with Yocto"
 description = "Guide for extending an SWUpdate Yocto layer configuration for automatic installation of update images provided by an HTTP server."
-authors = ["Adrian Winterstein" ]
+authors = ["Adrian Winterstein"]
 date = "2025-03-27"
 
 [taxonomies]

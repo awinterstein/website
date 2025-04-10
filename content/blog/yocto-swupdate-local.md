@@ -1,7 +1,7 @@
 +++
 title = "Setting up SWUpdate with Yocto"
 description = "Guide for integrating firmware updates with the SWUpdate layer into a Yocto project using a Raspberry Pi as an example device."
-authors = ["Adrian Winterstein" ]
+authors = ["Adrian Winterstein"]
 date = "2025-02-06"
 updated = "2025-03-27"
 

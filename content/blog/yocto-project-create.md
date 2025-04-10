@@ -1,7 +1,7 @@
 +++
 title = "Creating a Yocto Project"
 description = "Short guide for creating a Yocto project repository based on the Poky reference distribution. It gives an overview on possible repository structures and shows the basic usage of the kas tool for bitbake management."
-authors = ["Adrian Winterstein" ]
+authors = ["Adrian Winterstein"]
 date = "2025-02-04"
 
 [taxonomies]

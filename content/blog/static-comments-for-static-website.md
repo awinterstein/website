@@ -1,7 +1,7 @@
 +++
 title = "Comments for Static Website (with Mastodon)"
 description = "How I added a static comment feature to my static website."
-authors = ["Adrian Winterstein" ]
+authors = ["Adrian Winterstein"]
 date = "2025-02-28"
 
 [taxonomies]
