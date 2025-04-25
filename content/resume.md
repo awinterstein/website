@@ -61,14 +61,13 @@ Since 2023, I have continued my project work on a freelance basis and have alrea
 </ul>
 {% end %}
 
-
 {% resume_station(time_span="2016 - 2017", title="Software Engineer", company="Zühlke Engineering GmbH", document_title="Show Employer's Reference (German)", document_file="arbeitszeugnis-zuhlke.pdf") %}
 <p>Software development and consulting for embedded systems with a focus on C++. Gradually taking on more responsibility for project success and direct client communication.</p>
 
 <h4>Projects:</h4>
 <ul>
 <li><a href="/projects/test-stand-for-oven/">Test Stand for an Oven (NI Teststand and C++ framework on Windows)</a></li>
-<lic><a href="/projects/platform-for-laboratory-analysis-devices/">Software Platform for Laboratory Analysis Devices (C++ and Python on Linux)</a></li>
+<li><a href="/projects/platform-for-laboratory-analysis-devices/">Software Platform for Laboratory Analysis Devices (C++ and Python on Linux)</a></li>
 <li><a href="/projects/hot-drinks-preparation/">Household Appliance for Hot Drinks Preparation (C++ with FreeRTOS on Arm Cortex)</a></li>
 <li><a href="/projects/prototype-pump-heater-coffee-machine/">Prototype for a Coffee Machine (C++ on Arduino)</a></li>
 <li><a href="/projects/architecture-review-3d-printers/">Architecture Review of a Control Software for Industrial 3D Printers (C++ and Qt)</a></li>
