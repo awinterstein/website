@@ -1,0 +1,16 @@
+# Used by sites based on the theme
+# (not necessarily needed in all languages)
+blog = "Blog"
+blog_tags = "Tags"
+comments = "Comments"
+home = "Home"
+impressum = "Impressum (Legal Notice)"
+main_skills = "Main Skills"
+other_skills = "Additional Skills"
+posts = "Posts"
+privacy_policy = "Privacy Policy"
+projects = "Projects"
+read_more = "Read More"
+resume = "CV"
+skills = "Skills"
+skills_technologies = "Skills & Technologies"

@@ -15,7 +15,7 @@
 
 {#- Show comments, if there are any in the comments file. -#}
 {%- if comments.content -%}
-<h2>{{ i18n.comments }}</h2>
+<h2>{{ content::translate(value='Comments', i18n=i18n, i18n_user=i18n_user) }}</h2>
 {{ comments.content | safe }}
 {%- endif -%}
 
