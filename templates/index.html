@@ -5,7 +5,7 @@
 <div class="flex items-center flex-col mt-16">
     <h1>{{ section.title }}</h1>
     {% if config.extra.index.slogan %}
-    <p class="mb-6">{{ config.extra.index.slogan }}</p>
+    <p class="mb-6 text-center text-lg italic">{{ config.extra.index.slogan | safe }}</p>
     {% endif %}
     {% if config.extra.index.image %}
     <img class="rounded-full h-40 w-40"

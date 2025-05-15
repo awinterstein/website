@@ -87,7 +87,7 @@ notice = 'Adrian Winterstein'
 
 # Index page
 [extra.index]
-slogan = "Empowering interdisciplinary, distributed teams"
+slogan = "Software architecture & development with a focus on <span class=\"whitespace-nowrap\">C++ and embedded systems</span>"
 image = "adrian.png"
 image_alt = "Picture of Adrian Winterstein"
 
