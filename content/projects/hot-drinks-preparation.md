@@ -5,7 +5,13 @@ date = 2018-01-31
 
 [extra]
 date_start = 2017-07-01
+locations = ["Remote"]
 image = "tea-pot.jpg" # https://unsplash.com/de/fotos/-k94FbpisWto
+
+responsibilities = [
+    "Temporary support by **firmware development** in Scrum team",
+    "Focus on controlling the preparation process and error handling",
+]
 
 [taxonomies]
 projects=["Software Development (Embedded)"]
@@ -17,7 +23,3 @@ to develop an appliance for hot drinks preparation, consisting of a
 device and matching individual portions for the German and Chinese
 markets. In an interdisciplinary team, the hardware, electronics and
 software was developed to production readiness.
-
-## Responsibilities
-
-Firmware development in a scrum team. Focus on controlling the preparation process and error handling.

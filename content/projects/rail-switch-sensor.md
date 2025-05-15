@@ -5,8 +5,14 @@ date = 2019-12-31
 
 [extra]
 date_start = 2017-11-01
+locations = ["Munich", "Belgrade"]
 image = "railway-switch.jpg" # https://unsplash.com/de/fotos/-7sqzjK51mrA
 top_project = true
+
+responsibilities = [
+    "As the software lead responsible for the **software architecture and quality**",
+    "Leading the **international cooperation** with colleagues from a Serbian location",
+]
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
@@ -14,7 +20,3 @@ skills=["Architecture", "Tech Lead", "C++", "Firmware", "CI / CD", "Arm Cortex",
 +++
 
 Particularly challenging in this context was to ensure the unattended function of the device over several years, which required intensive interaction of the electronics and software disciplines.
-
-## Responsibilities
-
-As the software lead responsible for the software architecture and quality. Leading the international cooperation with colleagues from a Serbian location.

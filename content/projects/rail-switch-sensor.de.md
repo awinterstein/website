@@ -5,8 +5,14 @@ date = 2019-12-31
 
 [extra]
 date_start = 2017-11-01
+locations = ["München", "Belgrad"]
 image = "railway-switch.jpg" # https://unsplash.com/de/fotos/-7sqzjK51mrA
 top_project = true
+
+responsibilities = [
+    "Als Software-Lead verantwortlich für die **Software-Architektur und -Qualität**",
+    "Anleitung der **internationalen Zusammenarbeit** mit Kollegen von einem serbischen Standort",
+]
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
@@ -14,7 +20,3 @@ skills=["Architecture", "Tech Lead", "C++", "Firmware", "CI / CD", "Arm Cortex",
 +++
 
 Besonders herausfordernd war hierbei die Sicherstellung der autarken Funktion des Gerätes über mehrere Jahre, die ein intensives Zusammenspiel der Disziplinen Elektronik und Software erforderte.
-
-## Verantwortlichkeiten
-
-Als Software-Lead verantwortlich für die Software-Architektur und -Qualität. Anleitung der internationalen Zusammenarbeit mit Kollegen von einem serbischen Standort.

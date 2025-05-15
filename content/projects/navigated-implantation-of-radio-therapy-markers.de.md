@@ -5,7 +5,16 @@ date = 2014-07-31
 
 [extra]
 date_start = 2013-07-01
+company = "Deutsches Krebsforschungszentrum"
+locations = ["Heidelberg"]
 image = "navigated-implantation.jpg"
+
+responsibilities = [
+    "Analyse des Workflows mit den Domänenexperten",
+    "Implementierung der **Navigationsanwendung**",
+    "Evaluierung durch eine Phantomstudie in Zusammenarbeit mit medizinischem Personal",
+    "**Publizieren der Forschungsergebnisse**"
+]
 
 [taxonomies]
 projects=["Research"]
@@ -16,10 +25,6 @@ Im Rahmen der Krebsforschung sollte ein Computerassistenz-System die präzise un
 Intervention mit Ultraschallbildgebung erfolgen.
 
 *Siehe auch das vollständige Dokument der Abschlussarbeit: <a href="/documents/masterarbeit.pdf" target="_blank">Ein ultraschallbasiertes Computerassistenzsystem mit integriertem elektromagnetischem Feldgenerator für die Leberchirurgie</a>{{ icon(type="pdf") }}*
-
-## Verantwortlichkeiten
-
-Analyse des Workflows mit den Domänenexperten, Implementierung der Navigationsanwendung und Evaluierung dieser durch eine Phantomstudie in Zusammenarbeit mit dem medizinischen Personal.
 
 ## Veröffentlichungen
 

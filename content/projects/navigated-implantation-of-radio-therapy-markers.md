@@ -5,7 +5,16 @@ date = 2014-07-31
 
 [extra]
 date_start = 2013-07-01
+company = "Deutsches Krebsforschungszentrum"
+locations = ["Heidelberg"]
 image = "navigated-implantation.jpg"
+
+responsibilities = [
+    "Analysis of the workflow with the domain experts",
+    "Implementation of the **navigation application**",
+    "Evaluation by means of a phantom study in collaboration with medical staff",
+    "**Publication of the research results**"
+]
 
 [taxonomies]
 projects=["Research"]
@@ -15,10 +24,6 @@ skills=["C++", "Qt", "ITK", "VTK", "Ultrasound", "Electromagnetic Tracking"]
 In the context of cancer research, a computer-assisted system should enable the precise and simple implantation of radiation therapy markers. It was intended to be used during an open intervention with ultrasound imaging.
 
 *See also the complete document of the thesis: <a href="/documents/masterarbeit.pdf" target="_blank">Ein ultraschallbasiertes Computerassistenzsystem mit integriertem elektromagnetischem Feldgenerator für die Leberchirurgie</a> (German){{ icon(type="pdf") }}*
-
-## Responsibilities
-
-Analysis of the workflow together with the domain experts. Implementation of the navigation application and evaluation of this through a phantom study in cooperation with the medical staff.
 
 ## Publications
 

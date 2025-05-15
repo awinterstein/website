@@ -5,7 +5,13 @@ date = 2017-07-31
 
 [extra]
 date_start = 2017-05-01
+locations = ["Munich"]
 image = "printer.jpg" # https://unsplash.com/de/fotos/-qPEEb-hmiZI
+
+responsibilities = [
+    "Carrying out the **architecture review** of the *Qt* application",
+    "Preparation of the results and development of concrete suggestions for improvement"
+]
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]

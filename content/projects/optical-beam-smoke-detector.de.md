@@ -5,8 +5,19 @@ date = 2024-11-08
 
 [extra]
 date_start = 2022-08-01
+company = "Hekatron Brandschutz"
+locations = ["Bern", "Freiburg", "Remote"]
 image = "fire.jpg"
 top_project = true
+
+responsibilities = [
+    "Verantwortlich für die **Firmware-Architektur** und die Integration in das Gesamtsystem",
+    "Technische Leitung von 3 Firmware-Entwicklern",
+    "Unterstützung der **Testsystementwicklung** (HIL) mit dem *Pytest*-Framework in *Python*",
+    "Implementierung u.a. der Rauchpegelberechnung, des **Firmware-Updates** und der **Persistenzschicht**",
+    "Konzeption und Implementierung des Build-Systems mit *CMake* sowie der kontinuierlichen Integration im CI/CD-Tool *TeamCity*",
+    "Automatisierung reproduzierbarer Build- und Testumgebungen mit *Ansible* und *Docker*",
+]
 
 [taxonomies]
 projects=["Architecture & Technical Lead"]
@@ -16,11 +27,5 @@ skills=["Architecture", "Tech Lead", "C++", "Firmware", "CI / CD", "Arm Cortex",
 In einem interdisziplinären Team aus Firmware-, Elektronik- und Mechanikentwicklern, Physikern und Prüfingenieuren haben wir den Rauchmelder mit einem **Fokus auf sehr hohe Empfindlichkeit in allen Betriebszuständen** entwickelt.
 
 Die Firmware wurde für einen *Arm Cortex* Controller in *C++* mit *FreeRTOS* als Echtzeitbetriebssystem entwickelt. Insbesondere der Messteil der Firmware musste **Echtzeitanforderungen** erfüllen. Die Rauchpegelberechnung musste verschiedene Kompensationen auf das gemessene Signal anwenden, um Signalschwankungen aufgrund des großen unterstützten Temperaturbereichs und der zunehmenden Geräteverschmutzung während der Lebensdauer des Melders zu berücksichtigen.
-
-## Verantwortlichkeiten
-
-Ich war verantwortlich für die **Firmware-Architektur** des Melders und für die Integration in das Gesamtsystem. Im Rahmen dieser Aufgabe kümmerte ich mich um die **Schnittstellen zwischen Firmware und Elektronik** und die **Schnittstellen zum Brandmeldesystem**. Ich leitete die Firmware-Entwickler an und unterstützte die Entwicklung des Testsystems (HIL) mit dem *Pytest*-Framework in *Python*.
-
-Zusätzlich habe ich Teile der Melder-Firmware implementiert, zum Beispiel die Rauchpegelberechnung, das **Firmware-Update** und die **Persistenzschicht**. Und ich habe die Konzeption und Implementierung des Build-Systems mit *CMake* und der kontinuierlichen Integration im CI / CD-Tool *TeamCity* durchgeführt. Für die Automatisierung reproduzierbarer Build- und Testumgebungen habe ich in diesem Zusammenhang *Docker* und *Ansible* eingesetzt.
 
 <a href="/documents/projektreferenz-hekatron.pdf" target="_blank">Projektreferenz anzeigen{{ icon(type="pdf") }}</a>
