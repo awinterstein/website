@@ -2,7 +2,7 @@
 title = "Lebenslauf"
 +++
 
-{{ icon(type="pdf", title="") }}*Es gibt auch ein <a href="/documents/lebenslauf.pdf" target="_blank">PDF-Dokument meines Lebenslaufs</a>.*
+{{ icon(type="pdf", title="") }}*Es gibt auch ein <a href="/documents/cv-adrian-winterstein-de.pdf" target="_blank">PDF-Dokument meines Lebenslaufs</a>.*
 
 <img class="rounded-full h-40 w-40 md:float-right md:ml-8 md:mr-8" src="/adrian.png" />
 

@@ -1,0 +1,272 @@
+name = "Adrian Winterstein"
+tagline = "Software Architect & Developer"
+summary = "Adrian Winterstein is an experienced developer and architect with a special focus on device development (embedded systems) using modern C++. He has already worked on over 15 successful projects, including the firmware development for a smoke detector, an IIoT railway switch sensor and an adaptation module for a patient monitor. In addition to software development, he also has extensive knowledge in the areas of testing and DevOps. He particularly enjoys contributing his skills to interdisciplinary, international teams, where he can leverage his expertise to drive innovation and efficiency."
+locale = "en_GB"
+language_levels = { 5 = "Mother-tongue", 4 = "Proficient" }
+
+[contact]
+email = "adrian@winterstein.biz"
+website = "www.winterstein.biz"
+phone = "+4961501833121"
+location = "Hamburg, Germany"
+linkedin = "adrian-winterstein"
+github = "awinterstein"
+
+[translations]
+summary = "Summary"
+experience = "Professional Experience"
+education = "Education"
+certifications = "Certifications"
+languages = "Language Skills"
+project = "Project"
+projects = "Projects"
+skills = "Skills"
+awards = "Awards"
+since = "since"
+
+[[skill_category]]
+title = "Programming"
+skills = ["C++", "Python", "C", "Rust"]
+
+[[skill_category]]
+title = "Libraries"
+skills = ["Qt", "Boost", "STM32Cube", "Protobuf"]
+
+[[skill_category]]
+title = "Microcontroller"
+skills = ["Arm Cortex", "Arduino"]
+
+[[skill_category]]
+title = "Operating Systems"
+skills = ["FreeRTOS", "Linux", "Zephyr"]
+
+[[skill_category]]
+title = "Testing"
+skills = ["Test Automation", "Pytest", "Google Test", "Cpputest"]
+
+[[skill_category]]
+title = "Documentation"
+skills = [
+    "Arc42",
+    "C4 Model",
+    "UML",
+    "Doxygen",
+    "Markdown",
+    "Polarion",
+    "LaTeX",
+]
+
+[[skill_category]]
+title = "Build Systems"
+skills = ["CMake", "Yocto", "Make"]
+
+[[skill_category]]
+title = "Processes"
+skills = ["Agile Development", "Scrum", "V-model", "Test-driven-development"]
+
+[[skill_category]]
+title = "DevOps"
+skills = [
+    "Continuous Integration",
+    "Ansible",
+    "Azure DevOps",
+    "TeamCity",
+    "Jenkins",
+    "Docker",
+]
+
+[[skill_category]]
+title = "Code Analysis"
+skills = ["Clang Tidy", "SonarQube", "PC-Lint", "Cppcheck"]
+
+[[skill_category]]
+title = "Tools"
+skills = [
+    "Git",
+    "Bash",
+    "Visual Studio Code",
+    "QtCreator",
+    "Atlassian Toolsuite (Jira, Confluence, Bitbucket)",
+]
+
+[[station]]
+title = "Software Architect & Developer"
+company = "Self-employed"
+locations = ["São Paulo", "Hamburg"]
+from = 2023-06-01
+description_main = [
+    "Independent project work focussing on **embedded software architecture** and software development with *C++*",
+    "**Consulting** in the areas of continuous integration (*CI*) & testing as well as interdisciplinary collaboration",
+]
+projects = ["../content/projects/optical-beam-smoke-detector.md"]
+document_title = "Project Reference (German)"
+document_file = "projektreferenz-hekatron.pdf"
+
+[[station]]
+title = "Lead Embedded Software Architect"
+company = "Zühlke Engineering GmbH"
+locations = ["Munich", "Porto"]
+from = 2021-01-01
+until = 2023-05-31
+description_main = [
+    "**Technical lead** of remote device developments",
+    "**Architecture consulting** and requirements management",
+    "Implementation focus on *C++* (bare-metal / RTOS), continuous integration (*CI*) & testing as well as firmware updates",
+]
+projects = [
+    "../content/projects/module-of-patient-monitor.md",
+    "../content/projects/beacon-for-traffic-diversions.md",
+    "../content/projects/next-generation-coffee-machines.md",
+    "../content/projects/iot-edge-for-campervans.md",
+]
+document_title = "Employer's Reference (German)"
+document_file = "arbeitszeugnis-zuhlke.pdf"
+
+[[station]]
+title = "Expert Software Engineer"
+company = "Zühlke Engineering GmbH"
+locations = ["Munich"]
+from = 2018-01-01
+until = 2020-12-31
+description_main = [
+    "Responsibility for the **software architecture and quality** of an IIoT device development (*C++*, *FreeRTOS*, *Arm Cortex*)",
+    "Assumption of **leadership tasks** for 5 software developers",
+]
+projects = [
+    "../content/projects/security-platform.md",
+    "../content/projects/rail-switch-sensor.md",
+    "../content/projects/test-stand-for-motor-control.md",
+]
+document_title = "Employer's Reference (German)"
+document_file = "arbeitszeugnis-zuhlke.pdf"
+
+[[station]]
+title = "Software Engineer"
+company = "Zühlke Engineering GmbH"
+locations = ["Munich"]
+from = 2014-11-01
+until = 2017-12-31
+description_main = [
+    "Software development and **consulting for embedded systems** with a focus on *C++* and real-time operating systems (*FreeRTOS*)",
+    "Gradual assumption of **responsibility for project success** and direct customer communication",
+]
+projects = [
+    "../content/projects/hot-drinks-preparation.md",
+    "../content/projects/platform-for-laboratory-analysis-devices.md",
+    "../content/projects/architecture-review-3d-printers.md",
+    "../content/projects/prototype-pump-heater-coffee-machine.md",
+    "../content/projects/control-system-for-chillers.md",
+    "../content/projects/diagnostic-tool-for-high-end-converters.md",
+    "../content/projects/test-stand-for-oven.md",
+    "../content/projects/tracking-transported-good.md",
+]
+document_title = "Employer's Reference (German)"
+document_file = "arbeitszeugnis-zuhlke.pdf"
+
+[[station]]
+title = "Research Assistant"
+company = "German Cancer Research Center"
+locations = ["Heidelberg"]
+from = 2013-06-01
+until = 2014-07-31
+description_main = [
+    "Research in the field of **computer-assisted interventions**",
+]
+description_extended = [
+    "Development and evaluation of an **ultrasound-based assistance system** for the minimally invasive implantation of markers",
+]
+projects = [
+    "../content/projects/navigated-implantation-of-radio-therapy-markers.md",
+]
+document_title = "Employer's Reference (German)"
+document_file = "arbeitszeugnis-dkfz.pdf"
+
+[[station]]
+title = "Research Assistant"
+company = "Center for Advanced Security Research Darmstadt"
+locations = ["Darmstadt"]
+from = 2011-01-01
+until = 2013-12-31
+description_main = [
+    "Research in the fields of **IT security** and **image processing**",
+]
+description_extended = [
+    "Development of algorithms for the **automatic detection of ears** on 3D images",
+]
+projects = ["../content/projects/detection-of-ears.md"]
+document_title = "Employer's Reference (German)"
+document_file = "arbeitszeugnis-cased.pdf"
+
+[[education]]
+title = "M.Sc. in Computer Science"
+institution = "Darmstadt University of Applied Sciences"
+from = 2012-03-01
+until = 2014-04-30
+description = "Master’s thesis: *Development of a System For Navigated Implantation of Radiation Therapy Markers*"
+document_title = "Master's Certificate"
+document_file = "masterzeugnis-ects.pdf"
+
+[[education]]
+title = "B.Sc. in Computer Science"
+institution = "Darmstadt University of Applied Sciences"
+from = 2009-09-01
+until = 2012-02-29
+description = "Bachelor’s thesis: *Development of an Algorithm for the Detection of Ears on 3D Profile Images*"
+document_title = "Bachelor's Certificate"
+document_file = "bachelorzeugnis-ects.pdf"
+
+[[certification]]
+title = "Certified Professional for Software Architecture (CPSA-F)"
+title_short = "Software Architecture (CPSA-F)"
+institution = "International Software Architecture Qualifications Board"
+institution_short = "iSAQB"
+date = 2019-07-12
+document_title = "Certificate"
+document_file = "certificate-isaqb.pdf"
+
+[[certification]]
+title = "Certified Tester (CTFL)"
+title_short = "Tester (CTFL)"
+institution = "International Software Testing Qualifications Board"
+institution_short = "ISTQB"
+date = 2015-07-07
+document_title = "Certificate"
+document_file = "certificate-istqb.pdf"
+
+[[certification]]
+title = "Certified Professional for Requirements Engineering (CPRE FL)"
+title_short = "Requirements Engineering (CPRE FL)"
+institution = "International Requirements Engineering Board"
+institution_short = "IREB"
+date = 2014-11-12
+document_title = "Certificate"
+document_file = "certificate-ireb.pdf"
+
+[[award]]
+title = "Preis des Fachbereichs Informatik (h_da)"
+description = "For the best master’s thesis"
+date = 2014-05-01
+document_title = "Award (German)"
+document_file = "urkunde-fachbereichspreis.pdf"
+
+[[award]]
+title = "CAST-Förderpreis IT-Sicherheit 2012"
+description = "First in the category bachelor’s theses and student research projects"
+date = 2012-11-22
+document_title = "Award (German)"
+document_file = "urkunde-cast.pdf"
+
+[[award]]
+title = "Förderpreis für Schüler der Heinrich-Emanuel-Merck-Schule"
+description = "For the best high-school graduate"
+date = 2006-06-01
+document_title = "Award (German)"
+document_file = "urkunde-hems.pdf"
+
+[[language]]
+title = "German"
+level = 5
+
+[[language]]
+title = "English"
+level = 4

@@ -2,7 +2,7 @@
 title = "Curriculum Vitae"
 +++
 
-{{ icon(type="pdf") }}*There is also a <a href="/documents/cv.pdf" target="_blank">PDF version of my CV</a> available.*
+{{ icon(type="pdf") }}*There is also a <a href="/documents/cv-adrian-winterstein-en.pdf" target="_blank">PDF version of my CV</a> available.*
 
 <img class="rounded-full h-40 w-40 md:float-right md:ml-8 md:mr-8" src="/adrian.png" />
 
