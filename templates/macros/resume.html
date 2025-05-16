@@ -1,0 +1,61 @@
+{% import "macros/content.html" as content -%}
+
+{% macro heading(title) %}
+<div class="mt-8">
+    <span class="md:inline-block items-center w-3/12 md:mr-4">
+        <hr class="border-4 text-secondary w-full" />
+    </span>
+    <span class="inline-block w-8/12">
+        <h2>{{ title }}</h2>
+    </span>
+</div>
+{% endmacro %}
+
+{% macro station(title, company, description, time_span, document_title, document_file) %}
+<div class="flex mt-4">
+    <span class="hidden md:inline-block w-3/12 items-start mr-4">{{ time_span }}</span>
+    <span class="inline-block w-full md:w-8/12 mb-2">
+        <h3>{{ title }}</h3>
+        <span class="sm:inline-block md:hidden text-gray-400 italic">{{ time_span }} | </span>
+        <span class="text-gray-400 italic mr-4">{{ company }}</span>
+        {% if document_file -%}
+            <a href="/documents/{{ document_file }}" {% if document_title %}title="{{ document_title}}" {% endif %}
+                target="_blank">
+                {{ content::icon(id="pdf") }}
+            </a>
+        {%- endif -%}
+    </span>
+</div>
+
+<div class="flex">
+    <span class="hidden md:inline-block w-3/12 mr-4"></span>
+    <span class="inline-block w-full md:w-8/12 leading-relaxed">
+        {% if description is iterable %}
+            <ul>
+                {% for element in description %}
+                    <li>{{ element | markdown(inline=true) | safe }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            {{ description | markdown(inline=true) | safe }}
+        {% endif %}
+    </span>
+</div>
+{% endmacro %}
+
+{% macro station_short(title, company, time_span, document_title, document_file) %}
+<div class="flex mt-4">
+    <span class="hidden md:inline-block w-3/12 items-start mr-4">{{ time_span }}</span>
+    <span class="inline-block w-full md:w-8/12 mb-2">
+        <h3>{{ title }}</h3>
+        <span class="inline-block md:hidden text-gray-400 italic">{{ time_span }} | </span>
+        <span class="text-gray-400 italic mr-4">{{ company }}</span>
+        {% if document_file -%}
+            <a href="/documents/{{ document_file }}" {% if document_title %}title="{{ document_title}}" {% endif %}
+                target="_blank">
+                {{ content::icon(id="pdf") }}
+            </a>
+        {%- endif -%}
+    </span>
+</div>
+{% endmacro %}

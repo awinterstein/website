@@ -1,0 +1,82 @@
+{%- import "macros/resume.html" as resume -%}
+{% extends "project-portfolio/templates/page.html" %}
+
+{% block page_content %}
+{{ page.content | safe }}
+
+{%- set data = load_data(path="cv/resume." ~ lang ~ ".toml", required=true) -%}
+
+{% if data.station %}
+    {{ resume::heading(title=data.translations.experience) }}
+    {% for element in data.station %}
+        {% set from_format = element.from | date(format="%m / %Y") %}
+        {% set date_format = data.translations.since ~ " " ~ from_format %}
+        {% if element.until %}
+            {% set until_format = element.until | date(format="%m / %Y") %}
+            {% set date_format = from_format ~ " – " ~ until_format %}
+        {% endif %}
+        {% if element.description_extended %}
+            {% set description = element.description_main | concat(with=element.description_extended) %}
+        {% else %}
+            {% set description = element.description_main %}
+        {% endif %}
+        {{ resume::station(title=element.title, company=element.company, description=description, time_span=date_format, document_title=element.document_title | default(value=""), document_file=element.document_file | default(value="")) }}
+
+        {% if element.projects %}
+        <div class="flex">
+            <span class="hidden md:inline-block w-3/12 mr-4"></span>
+            <span class="inline-block w-full md:w-8/12 leading-relaxed">
+                <h4>{% if element.projects | length == 1 %}{{ data.translations.project }}{% else %}{{ data.translations.projects }}{% endif %}:</h4>
+                <ul>
+                    {% for project in element.projects %}
+                        {% set project_data = get_page(path=project | trim_start_matches(pat="../content/"), required=true) %}
+                        <li><a href="{{ content::base_path() }}{{ project_data.path | trim_start_matches(pat="/") }}">{{ project_data.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </span>
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if data.certification %}
+    {{ resume::heading(title=data.translations.certifications) }}
+    {% for element in data.certification %}
+        {% set date_format = element.date | date(format="%m / %Y") %}
+        {{ resume::station_short(title=element.title, company=element.institution, time_span=date_format,
+    document_title=element.document_title | default(value=""), document_file=element.document_file | default(value="")) }}
+    {% endfor %}
+{% endif %}
+
+{% if data.award %}
+    {{ resume::heading(title=data.translations.awards) }}
+    {% for element in data.award %}
+        {% set date_format = element.date | date(format="%m / %Y") %}
+        {{ resume::station_short(title=element.title, company=element.description, time_span=date_format,
+    document_title=element.document_title | default(value=""), document_file=element.document_file | default(value="")) }}
+    {% endfor %}
+{% endif %}
+
+{% if data.education %}
+    {{ resume::heading(title=data.translations.education) }}
+    {% for element in data.education %}
+        {% set from_format = element.from | date(format="%m / %Y") %}
+        {% set until_format = element.until | date(format="%m / %Y") %}
+        {{ resume::station(title=element.title, company=element.institution, description=element.description, time_span=from_format ~ " – " ~ until_format,
+                        document_title=element.document_title | default(value=""), document_file=element.document_file | default(value="")) }}
+    {% endfor %}
+{% endif %}
+
+{% if data.language %}
+    {{ resume::heading(title=data.translations.languages) }}
+    {% for element in data.language %}
+        <div class="flex">
+            <span class="hidden md:inline-block w-3/12 mr-4"></span>
+            <span class="inline-block w-full md:w-8/12 mb-2">
+                <span>{{ element.title }}: {{ data.language_levels[element.level] }}</span>
+            </span>
+        </div>
+    {% endfor %}
+{% endif %}
+
+{% endblock %}
