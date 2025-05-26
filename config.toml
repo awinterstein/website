@@ -104,5 +104,4 @@ email = "mail@int.winterstein.biz"
 phone = "+4961501833121"
 
 [extra.favicon]
-favicon_16x16 = "favicons/favicon-16x16.png"
-favicon_32x32 = "favicons/favicon-32x32.png"
+svg = "favicon.svg"
