@@ -207,7 +207,7 @@ def create_markdown_entry(comment, locale):
     time = format_time(datetime, 'H:mm', locale=locale)
     return f'{{% comment(user_url="{comment['account']['url']}", comment_url="{comment['url']}", fullname="{get_display_name_without_emojis(comment)}", ' \
         f'datetime="{date} {connecting_word[locale]} {time}", avatar="{comment['account']['avatar_static']}", favorites={int(comment['favourites_count'])}, level={level}) %}}' \
-        f'{comment['content']}{{% end %}}'
+        f'{comment['content']}{{% end %}}'
 
 
 if __name__ == "__main__":
