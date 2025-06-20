@@ -1,7 +1,7 @@
 +++
 title = "Optical Beam Smoke Detector"
 description = "Architecture and firmware development for the next generation of a fire alarm system. The detector firmware had to be able to detect smoke with a very high sensitivity, while avoiding false alarms."
-date = 2024-10-07
+date = 2025-05-31 # End of the development project: 2024-11-08
 
 [extra]
 date_start = 2022-08-01
@@ -17,6 +17,7 @@ responsibilities = [
     "Implementation of, among other things smoke level calculation, **firmware update** and **persistence layer**",
     "Design and implementation of the build system with *CMake* and continuous integration in the CI/CD tool *TeamCity*",
     "Automation of reproducible build and test environments with *Ansible* and *Docker*",
+    "Firmware maintenance during the initial live phase since the end of the development project in November 2024"
 ]
 
 [taxonomies]

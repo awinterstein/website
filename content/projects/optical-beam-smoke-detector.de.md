@@ -1,7 +1,7 @@
 +++
 title = "Optischer Rauchwarnmelder"
 description = "Architektur- und Firmware-Entwicklung für die nächste Generation eines Brandmeldesystems. Die Firmware des Melders musste in der Lage sein, Rauch mit einer sehr hohen Empfindlichkeit zu erkennen und gleichzeitig Fehlalarme zu vermeiden."
-date = 2024-11-08
+date = 2025-05-31 # Ende des Entwicklungsprojektes: 2024-11-08
 
 [extra]
 date_start = 2022-08-01
@@ -17,6 +17,7 @@ responsibilities = [
     "Implementierung u.a. der Rauchpegelberechnung, des **Firmware-Updates** und der **Persistenzschicht**",
     "Konzeption und Implementierung des Build-Systems mit *CMake* sowie der kontinuierlichen Integration im CI/CD-Tool *TeamCity*",
     "Automatisierung reproduzierbarer Build- und Testumgebungen mit *Ansible* und *Docker*",
+    "Betreuung der Firmware während der ersten Zeit der Live-Phase seit Ende des Entwicklungsprojektes im November 2024"
 ]
 
 [taxonomies]
