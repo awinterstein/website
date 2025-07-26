@@ -61,6 +61,10 @@ title = "Build Systems"
 skills = ["CMake", "Yocto", "Make"]
 
 [[skill_category]]
+title = "Databases"
+skills = ["SQLite", "PostgreSQL"]
+
+[[skill_category]]
 title = "Processes"
 skills = ["Agile Development", "Scrum", "V-model", "Test-driven-development"]
 
