@@ -7,4 +7,4 @@ SOURCE_DIR=$(cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd)
 "$SOURCE_DIR/build.sh"
 
 # sync the files to the web hosting
-rsync -r --delete public/ ngcobalt447.manitu.net:/home/sites/site100040730/web/winterstein.biz/
+rsync -r --delete public/ dividuus.cerritus.eu:/home/sites/site100040730/web/winterstein.biz/
