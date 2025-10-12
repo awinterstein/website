@@ -8,7 +8,7 @@ The following information provides a simple overview of what happens to your per
 
 The controller responsible for data processing on this website is:
 
-Adrian Winterstein\
+Adrian Carvalho Winterstein\
 Niederwiesenstraße 6\
 64331 Weiterstadt\
 Germany

@@ -8,7 +8,7 @@ Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren 
 
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Webseite ist:
 
-Adrian Winterstein\
+Adrian Carvalho Winterstein\
 Niederwiesenstraße 6\
 64331 Weiterstadt
 

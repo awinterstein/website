@@ -2,7 +2,7 @@
 title = "Impressum - Legal Notice"
 +++
 
-Adrian Winterstein\
+Adrian Carvalho Winterstein\
 Niederwiesenstraße 6\
 64331 Weiterstadt\
 Germany
